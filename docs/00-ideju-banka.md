@@ -13,6 +13,13 @@ Vērtēt var vēlāk. Formāts nav svarīgs.
 - **Sample Library Organizer**: sample paku katalogs pa žanriem, BPM, key
 
 ### 🍰 Ēdiens
+- ⭐⭐ **"No Microwave" meal prep** (*jaunais favorīts, 2026-10-04*): gatavi komplekti (opt. 1, 2, 3…),
+  katrā brokastis, pusdienas un vakariņas, kas garšo istabas temperatūrā vai sasildāmas sviestmaižu tosterī.
+  - Ideja radās no manas pašas situācijas: darbā ir tikai sviestmaižu tosteris
+  - Vienkāršas receptes + **uzglabāšanas padomi** (ledusskapis, saldētava, ko nesaldēt)
+  - Triks: viena bāze divām maltītēm (piem., vista → wrap + bļoda)
+  - Konkurence: populārā grāmatā *Workweek Lunch* tam ir veltīta nodaļa "No Microwave, No Problem",
+    tātad pieprasījums ir. Atsevišķus šablonus tieši par to vēl jāpārbauda Etsy
 - **Home Bakery Business**: pasūtījumi, klienti, pašizmaksas kalkulators, piegādes kalendārs
 - (recepšu un ēdienkartes plānotāji: tirgus pārpildīts, ja nu vienīgi ļoti specifiski)
 
