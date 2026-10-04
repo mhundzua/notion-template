@@ -57,3 +57,4 @@ Labākais veids, kā mācīties: būvēt pašu šablonu, nevis skatīties 10 kur
 | [docs/02-beat-producer-struktura.md](docs/02-beat-producer-struktura.md) | Piemērs, kā izskatās šablona plāns (mūzikas producentiem) |
 | [docs/03-macibu-projekts-food-prep.md](docs/03-macibu-projekts-food-prep.md) | Soli pa solim: pirmais Notion projekts sev |
 | [docs/04-no-microwave-produkts.md](docs/04-no-microwave-produkts.md) | ⭐ Mana produkta plāns: bezmaksas formula + Week 1 |
+| [docs/04-no-microwave-product-EN.md](docs/04-no-microwave-product-EN.md) | Tas pats plāns angliski |
