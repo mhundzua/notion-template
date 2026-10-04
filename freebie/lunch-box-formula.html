@@ -149,11 +149,13 @@
     display: flex; gap: 4mm; align-items: center;
     background: var(--mustard-light);
     border-radius: 5mm;
-    padding: 4mm 5mm;
+    padding: 3.5mm 4mm;
   }
-  .hack .big { font-size: 26pt; }
-  .hack .t { font-weight: 800; font-size: 12pt; margin-bottom: .8mm; }
-  .hack .d { font-size: 10pt; line-height: 1.45; }
+  .hacks { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+  .hack.fun { background: var(--sage-light); }
+  .hack .big { font-size: 22pt; }
+  .hack .t { font-weight: 800; font-size: 11pt; margin-bottom: .8mm; }
+  .hack .d { font-size: 9.5pt; line-height: 1.45; }
 
   footer {
     margin-top: auto;
@@ -180,6 +182,7 @@
     .page { width: 100%; padding: 16px; }
     .formula, .combos, .tips { grid-template-columns: 1fr 1fr; }
     footer { flex-direction: column; align-items: flex-start; }
+    .hacks { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -279,11 +282,20 @@
     </div>
   </section>
 
-  <div class="hack">
-    <div class="big">🥪</div>
-    <div>
-      <div class="t">Bonus: the sandwich toaster hack</div>
-      <div class="d">Only have a sandwich toaster at work? Fill a tortilla with your protein, veggies and a little cheese, fold it and toast it. Warm, crispy quesadilla in 3 minutes.</div>
+  <div class="hacks">
+    <div class="hack">
+      <div class="big">🥪</div>
+      <div>
+        <div class="t">Bonus: the sandwich toaster hack</div>
+        <div class="d">Fill a tortilla with your protein, veggies and a little cheese, fold it and toast it. Warm, crispy quesadilla in 3 minutes.</div>
+      </div>
+    </div>
+    <div class="hack fun">
+      <div class="big">💡</div>
+      <div>
+        <div class="t">Fun fact: parchment paper</div>
+        <div class="d">Wrap your rice and meatballs in baking paper and pop the parcel in the sandwich toaster. Yes, it works. I do it at work!</div>
+      </div>
     </div>
   </div>
 
