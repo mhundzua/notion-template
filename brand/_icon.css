@@ -1,0 +1,5 @@
+@font-face { font-family: "Fraunces"; font-weight: 700; src: url("fonts/Fraunces-700.ttf"); }
+@font-face { font-family: "Nunito"; font-weight: 800; src: url("fonts/Nunito-800.ttf"); }
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1000px; height: 1000px; overflow: hidden; }
+body { display: flex; align-items: center; justify-content: center; font-family: "Nunito", sans-serif; }
