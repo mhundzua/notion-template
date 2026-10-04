@@ -1,60 +1,67 @@
-# Notion Template — digitālā produkta projekts
+# MadaraMakes: digitālo produktu projekts
 
-Šī ir mana "bāze": te glabājas viss par Notion šablonu, ko taisu pārdošanai.
+Šī ir mana "bāze": te glabājas viss par manu Etsy veikalu un produktiem.
 Kad nezinu, ko darīt tālāk, sāku šeit.
+
+> 🥪 **Sad desk lunch? Not on my watch.**
 
 ## Kur es esmu tagad?
 
-👉 **Niša izvēlēta: [🥪 No Microwave Meal Prep](docs/04-no-microwave-produkts.md)**
+👉 **4 mēnešu sagatavošanās** pirms pārcelšanās uz Gruziju.
+Produktus gatavoju mierīgi, bet **pārdošanu sāku tikai Gruzijā** (viena reģistrācija, 1% nodoklis).
 
-Nākamie soļi: pabeigt opt. 1 (3 receptes + iepirkumu saraksts + prep plāns) un bezmaksas "Lunch Box Formula".
+## Jau izdarīts ✅
+- [x] Niša: [🥪 No Microwave Meal Prep](docs/04-no-microwave-produkts.md)
+- [x] Veikala nosaukums **MadaraMakes** un sauklis
+- [x] Pirmais produkts: [Lunch Box Formula](freebie/lunch-box-formula.pdf)
+- [x] 3 listinga bildes: [galvenā](freebie/listing/mockup-1-main.png), [What's inside](freebie/listing/mockup-2-inside.png), [How it works](freebie/listing/mockup-3-how.png)
+- [x] Veikala ikonu varianti: [brand/](brand/)
+- [x] VID atbilde par reģistrāciju Latvijā (ja kādreiz vajadzēs: pašnodarbinātā, NACE 47.91)
 
-## Ceļa karte
+## 4 mēnešu plāns
 
-Atzīmē `[x]`, kad izdarīts.
+Bez spiediena. Ja kāds mēnesis iet lēnāk, tas ir OK.
 
-### 1. posms: izpēte (1–2 nedēļas)
-- [ ] Izlasīt [nišu izpēti](docs/01-nisu-izpete.md)
-- [ ] Pameklēt Etsy un Gumroad pēc saraksta izpētes failā un aizpildīt tabulu
-- [ ] Pierakstīt idejas [ideju bankā](docs/00-ideju-banka.md), arī trakās
-- [ ] Izvēlēties **vienu** nišu (mūzikas producenti, iespējams, nav īstā, jo beatu pārdošanas bizness man ir svešs)
+### 1. mēnesis: Week 1 saturs + Pinterest
+- [ ] Izvēlēties brokastu recepti opt. 1
+- [ ] Uzrakstīt 3 receptes savā stilā (latviski, tulkosim kopā)
+- [ ] Pašai izmēģināt un **nofotografēt savas pusdienas** 📸
+- [ ] Izveidot Pinterest biznesa kontu **MadaraMakes**
 
-### 2. posms: Notion pamati (paralēli 1. posmam)
-- [ ] Uztaisīt mācību projektu [🍱 Food Prep](docs/03-macibu-projekts-food-prep.md) sev
-- [ ] Datubāzes (database) un īpašības (properties)
-- [ ] Views: tabula, kanban (board), kalendārs, galerija
-- [ ] Filtri un kārtošana
-- [ ] Relations un rollups (saites starp datubāzēm)
-- [ ] Vienkāršas formulas
-- [ ] Kā nopublicēt lapu un iedot "Duplicate" saiti pircējam
+### 2. mēnesis: Week 1 noformējums
+- [ ] Iepirkumu saraksts un svētdienas prep plāns
+- [ ] Week 1 PDF tādā pašā stilā kā formulas lapa
+- [ ] Week 1 listinga bildes
+- [ ] Pinterest: 2–3 pini nedēļā
 
-Labākais veids, kā mācīties: būvēt pašu šablonu, nevis skatīties 10 kursus.
+### 3. mēnesis: auditorija + nākamais produkts
+- [ ] Formulas lapu dot **bez maksas** Pinterest (Google Drive saite), lai cilvēki mani iepazīst
+- [ ] Week 2 vai cits mazs produkts
+- [ ] 4. listinga bilde: īsta foto ar pusdienu kastīti
 
-### 3. posms: pirmā versija (MVP)
-- [ ] Uzbūvēt šablonu pēc izvēlētās nišas struktūras plāna
-- [ ] Ievietot parauga datus, lai pircējs uzreiz redz, kā tas izskatās
-- [ ] Pašai lietot 1–2 nedēļas, pierakstīt, kas kaitina un kas trūkst
-- [ ] Iedot 2–3 cilvēkiem pamēģināt (draugi producenti, Reddit, Discord)
+### 4. mēnesis: atvēršana Gruzijā 🎉
+- [ ] Gruzijas grāmatvedis: Individual Entrepreneur + **Small Business** statuss (1%)
+- [ ] Reģistrācija Taisnīguma namā (klātienē)
+- [ ] Payoneer konts → savienot ar Etsy
+- [ ] Etsy: pabeigt veikala atvēršanu (13 € maksa), nosaukums **MadaraMakes**
+- [ ] Listingu teksti, tagi, "About" sadaļa
+- [ ] Publicēt produktus!
 
-### 4. posms: iepakojums
-- [ ] Noformējums: ikonas, cover bildes, viena krāsu palete
-- [ ] Īsa instrukcija "Kā sākt" pašā šablonā un video (Loom, 2–3 min)
-- [ ] Produkta bildes (mockups) Etsy un Pinterest
-- [ ] Produkta apraksts un atslēgvārdi
-
-### 5. posms: pārdošana
-- [ ] Etsy listings (+ varbūt Gumroad)
-- [ ] Pinterest: 3–5 jauni pini nedēļā uz šo produktu
-- [ ] Bezmaksas mini versija (freebie), lai vāktu e-pastus un uzticību
-- [ ] Pēc pirmajām pārdošanām: atsauksmes, uzlabojumi, nākamais produkts
+## Pirms izbraukšanas no Latvijas
+- [ ] Paziņot dzīvesvietu ārzemēs (latvija.gov.lv) + **papildu adrese Latvijā** vēstulēm
+- [ ] Noskaidrot, kas mainās ar veselības aprūpi un pašvaldības pakalpojumiem
+- [ ] EDS melnrakstu par saimniecisko darbību var izdzēst (Latvijā nereģistrēju)
 
 ## Faili
 
 | Fails | Kas tur ir |
 |---|---|
+| [docs/04-no-microwave-produkts.md](docs/04-no-microwave-produkts.md) | ⭐ Produkta plāns (latviski) |
+| [docs/04-no-microwave-product-EN.md](docs/04-no-microwave-product-EN.md) | Tas pats angliski |
+| [freebie/](freebie/) | Lunch Box Formula: PDF + rediģējamais HTML |
+| [freebie/listing/](freebie/listing/) | Etsy listinga bildes |
+| [brand/](brand/) | Veikala ikonas |
 | [docs/00-ideju-banka.md](docs/00-ideju-banka.md) | Visas idejas vienuviet. Liec klāt brīvi |
-| [docs/01-nisu-izpete.md](docs/01-nisu-izpete.md) | Kas tirgū jau ir, Etsy izpētes plāns |
-| [docs/02-beat-producer-struktura.md](docs/02-beat-producer-struktura.md) | Piemērs, kā izskatās šablona plāns (mūzikas producentiem) |
-| [docs/03-macibu-projekts-food-prep.md](docs/03-macibu-projekts-food-prep.md) | Soli pa solim: pirmais Notion projekts sev |
-| [docs/04-no-microwave-produkts.md](docs/04-no-microwave-produkts.md) | ⭐ Mana produkta plāns: bezmaksas formula + Week 1 |
-| [docs/04-no-microwave-product-EN.md](docs/04-no-microwave-product-EN.md) | Tas pats plāns angliski |
+| [docs/01-nisu-izpete.md](docs/01-nisu-izpete.md) | Tirgus izpēte |
+| [docs/03-macibu-projekts-food-prep.md](docs/03-macibu-projekts-food-prep.md) | Notion mācību projekts |
+| [docs/02-beat-producer-struktura.md](docs/02-beat-producer-struktura.md) | Vecā ideja: šablons mūzikas producentiem |
