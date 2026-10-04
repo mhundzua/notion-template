@@ -45,6 +45,17 @@
     gap: 3.2mm;
   }
   header { text-align: center; }
+  header.has-badge { position: relative; }
+  .badge {
+    position: absolute; right: -4mm; top: -3mm;
+    width: 30mm; height: 30mm; border-radius: 50%;
+    background: var(--terracotta); color: #fff;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    font-size: 8.5pt; line-height: 1.25; padding: 3mm;
+    transform: rotate(10deg);
+    box-shadow: 0 0 0 1.5mm var(--paper), 0 0 0 2mm var(--terracotta);
+  }
+  .badge b { font-family: "Fraunces", serif; font-size: 10.5pt; }
   .kicker {
     display: inline-block;
     font-weight: 800;
@@ -190,7 +201,8 @@
 <body>
 <div class="page">
 
-  <header>
+  <header class="has-badge">
+    <div class="badge"><div>Sad desk lunch?<br><b>Not on my watch.</b></div></div>
     <span class="kicker">The no-microwave</span>
     <h1>Lunch Box Formula</h1>
     <p class="subtitle">Pick <b>one from each column</b>. Pack it. Eat it cold. Done.</p>

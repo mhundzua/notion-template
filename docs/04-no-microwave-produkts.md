@@ -2,6 +2,8 @@
 
 **Viena teikuma solījums:** *Gatavas darba pusdienas visai nedēļai, kas garšo arī aukstas, bez mikroviļņu krāsns.*
 
+**Sauklis:** *Sad desk lunch? Not on my watch.* · **Veikals:** MadaraMakes (etsy.com/shop/MadaraMakes)
+
 **Kam:** cilvēkiem, kas pusdieno darbā vai skolā bez mikroviļņu krāsns (birojs, skola, slimnīca, noliktava, celtniecība, studenti).
 
 **Mana atšķirība no "75 recipes" e-grāmatām:**

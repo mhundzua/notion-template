@@ -2,6 +2,8 @@
 
 **One-sentence promise:** *Ready-made work lunches for the whole week that taste great cold. No microwave needed.*
 
+**Tagline:** *Sad desk lunch? Not on my watch.* · **Shop:** MadaraMakes (etsy.com/shop/MadaraMakes)
+
 **Who it's for:** people who eat lunch at work or school without a microwave (offices, schools, hospitals, warehouses, construction sites, students).
 
 **What makes it different from "75 recipes" ebooks:**
