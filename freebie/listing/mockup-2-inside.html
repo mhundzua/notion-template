@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>What's inside</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  .b1 { width: 760px; height: 760px; background: #F6E4D3; left: -260px; bottom: -340px; }
+  header { position: absolute; left: 120px; top: 110px; }
+  .grid { position: absolute; left: 120px; right: 120px; top: 440px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .card { background: var(--paper); border-radius: 40px; padding: 64px 54px; display: flex; gap: 40px; align-items: center;
+          box-shadow: 0 18px 40px rgba(47,59,47,.10); }
+  .card:nth-child(1) { background: var(--paper); }
+  .icon { width: 150px; height: 150px; border-radius: 34px; flex: none; display: flex; align-items: center; justify-content: center; font-size: 84px; }
+  .card:nth-child(1) .icon { background: var(--sage-light); }
+  .card:nth-child(2) .icon { background: var(--mustard-light); }
+  .card:nth-child(3) .icon { background: var(--blue-light); }
+  .card:nth-child(4) .icon { background: var(--terra-light); }
+  .t { font-family: "Fraunces", serif; font-size: 54px; line-height: 1.05; margin-bottom: 12px; }
+  .d { font-size: 32px; font-weight: 600; color: var(--muted); line-height: 1.35; }
+  .badge { right: 150px; top: 90px; }
+  .note { position: absolute; left: 0; right: 0; bottom: 120px; text-align: center; }
+  .note span { background: var(--ink); color: #fff; font-weight: 800; font-size: 30px; padding: 20px 40px; border-radius: 99px; letter-spacing: .03em; }
+</style></head>
+<body>
+  <div class="blob b1"></div>
+  <header>
+    <div class="kicker">Lunch Box Formula</div>
+    <h1>What's inside</h1>
+  </header>
+  <div class="badge"><div>Sad desk lunch?<br><b>Not on my watch.</b></div></div>
+  <div class="grid">
+    <div class="card"><div class="icon">🧩</div><div><div class="t">4-step formula</div><div class="d">Protein + base + veggies + sauce. 600+ combinations.</div></div></div>
+    <div class="card"><div class="icon">🥗</div><div><div class="t">3 starter combos</div><div class="d">Not sure where to begin? Start right here.</div></div></div>
+    <div class="card"><div class="icon">❄️</div><div><div class="t">3 freshness rules</div><div class="d">Crisp, not soggy, for 3–4 days in the fridge.</div></div></div>
+    <div class="card"><div class="icon">🥪</div><div><div class="t">2 toaster hacks</div><div class="d">Only a sandwich toaster at work? Warm lunch anyway.</div></div></div>
+  </div>
+  <div class="note"><span>Printable A4 PDF · 1 page · Instant download</span></div>
+  <div class="brand">MadaraMakes</div>
+</body></html>
