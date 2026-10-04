@@ -5,7 +5,9 @@ Kad nezinu, ko darīt tālāk, sāku šeit.
 
 ## Kur es esmu tagad?
 
-👉 **Mācību projekts: [🍱 Food Prep](docs/03-macibu-projekts-food-prep.md)** (paralēli Etsy izpētei)
+👉 **Niša izvēlēta: [🥪 No Microwave Meal Prep](docs/04-no-microwave-produkts.md)**
+
+Nākamie soļi: pabeigt opt. 1 (3 receptes + iepirkumu saraksts + prep plāns) un bezmaksas "Lunch Box Formula".
 
 ## Ceļa karte
 
@@ -54,3 +56,4 @@ Labākais veids, kā mācīties: būvēt pašu šablonu, nevis skatīties 10 kur
 | [docs/01-nisu-izpete.md](docs/01-nisu-izpete.md) | Kas tirgū jau ir, Etsy izpētes plāns |
 | [docs/02-beat-producer-struktura.md](docs/02-beat-producer-struktura.md) | Piemērs, kā izskatās šablona plāns (mūzikas producentiem) |
 | [docs/03-macibu-projekts-food-prep.md](docs/03-macibu-projekts-food-prep.md) | Soli pa solim: pirmais Notion projekts sev |
+| [docs/04-no-microwave-produkts.md](docs/04-no-microwave-produkts.md) | ⭐ Mana produkta plāns: bezmaksas formula + Week 1 |
