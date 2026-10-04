@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Listing mockup</title>
+<style>
+  @font-face { font-family: "Fraunces"; font-weight: 700; src: url("fonts/Fraunces-700.ttf"); }
+  @font-face { font-family: "Nunito"; font-weight: 600; src: url("fonts/Nunito-600.ttf"); }
+  @font-face { font-family: "Nunito"; font-weight: 800; src: url("fonts/Nunito-800.ttf"); }
+  :root {
+    --cream: #FBF6EE; --ink: #2F3B2F; --muted: #5F6B5F;
+    --sage: #7C9A7E; --sage-light: #E6EEE3; --terracotta: #D9774B;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 2000px; height: 1500px; overflow: hidden; }
+  body {
+    background: var(--sage-light);
+    font-family: "Nunito", sans-serif;
+    color: var(--ink);
+    position: relative;
+  }
+  /* soft decorative blobs */
+  .blob { position: absolute; border-radius: 50%; }
+  .b1 { width: 900px; height: 900px; background: #F6E4D3; right: -180px; top: -260px; }
+  .b2 { width: 520px; height: 520px; background: #FBF0D6; right: 520px; bottom: -300px; }
+
+  .text {
+    position: absolute; left: 120px; top: 0; bottom: 0; width: 780px;
+    display: flex; flex-direction: column; justify-content: center; gap: 34px;
+  }
+  .kicker {
+    font-weight: 800; letter-spacing: .16em; font-size: 30px; color: var(--terracotta);
+    text-transform: uppercase;
+  }
+  h1 {
+    font-family: "Fraunces", serif; font-weight: 700;
+    font-size: 116px; line-height: 1.0; margin: 0;
+  }
+  h1 .small { display: block; font-size: 64px; color: var(--sage); margin-bottom: 10px; }
+  .sub { font-size: 40px; font-weight: 600; color: var(--muted); margin: 0; }
+  .sub b { color: var(--ink); font-weight: 800; }
+  ul { list-style: none; padding: 0; margin: 6px 0 0; display: grid; gap: 18px; }
+  li { font-size: 38px; font-weight: 600; display: flex; align-items: center; gap: 22px; }
+  li .check {
+    width: 52px; height: 52px; border-radius: 50%; background: var(--sage); color: #fff;
+    display: inline-flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 800;
+    flex: none;
+  }
+  .pill {
+    align-self: flex-start;
+    background: var(--ink); color: #fff; font-weight: 800; font-size: 30px;
+    padding: 18px 34px; border-radius: 99px; letter-spacing: .04em;
+  }
+
+  .sheet {
+    position: absolute; right: 130px; top: 110px;
+    width: 880px; aspect-ratio: 210 / 297;
+    overflow: hidden; border-radius: 6px;
+    transform: rotate(4deg);
+    box-shadow: 0 40px 80px rgba(47,59,47,.28), 0 8px 18px rgba(47,59,47,.18);
+    background: #fff;
+  }
+  .sheet img { width: 100%; display: block; }
+  .brand {
+    position: absolute; right: 70px; bottom: 50px;
+    font-family: "Fraunces", serif; font-size: 34px; color: var(--ink); opacity: .75;
+  }
+</style>
+</head>
+<body>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+
+  <div class="text">
+    <div class="kicker">Instant download · Printable PDF</div>
+    <h1><span class="small">The No-Microwave</span>Lunch Box Formula</h1>
+    <p class="sub"><b>600+ work lunches</b> that taste great cold</p>
+    <ul>
+      <li><span class="check">✓</span>4-step mix &amp; match formula</li>
+      <li><span class="check">✓</span>3 easy starter combos</li>
+      <li><span class="check">✓</span>3 rules for a lunch that stays fresh</li>
+      <li><span class="check">✓</span>2 sandwich toaster hacks</li>
+    </ul>
+    <div class="pill">Printable A4 PDF · 1 page</div>
+  </div>
+
+  <div class="sheet"><img src="_page-blurred.png" alt=""></div>
+  <div class="brand">MadaraMakes</div>
+</body>
+</html>
