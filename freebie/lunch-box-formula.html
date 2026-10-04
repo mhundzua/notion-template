@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lunch Box Formula</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @font-face { font-family: "Fraunces"; font-weight: 500; src: url("fonts/Fraunces-500.ttf"); }
+  @font-face { font-family: "Fraunces"; font-weight: 700; src: url("fonts/Fraunces-700.ttf"); }
+  @font-face { font-family: "Nunito"; font-weight: 400; src: url("fonts/Nunito-400.ttf"); }
+  @font-face { font-family: "Nunito"; font-weight: 600; src: url("fonts/Nunito-600.ttf"); }
+  @font-face { font-family: "Nunito"; font-weight: 700; src: url("fonts/Nunito-700.ttf"); }
+  @font-face { font-family: "Nunito"; font-weight: 800; src: url("fonts/Nunito-800.ttf"); }
+  :root {
+    --cream: #FBF6EE;
+    --paper: #FFFDF9;
+    --ink: #2F3B2F;
+    --muted: #6B776B;
+    --sage: #7C9A7E;
+    --sage-light: #E6EEE3;
+    --terracotta: #D9774B;
+    --terracotta-light: #FBE6DA;
+    --mustard: #E8B04B;
+    --mustard-light: #FBF0D6;
+    --line: #E7DED0;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Nunito", "Liberation Sans", sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm; overflow: hidden;
+    margin: 0 auto;
+    padding: 10mm 14mm 9mm;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    gap: 4mm;
+  }
+  header { text-align: center; }
+  .kicker {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 10.5pt;
+    letter-spacing: .18em;
+    color: var(--terracotta);
+    text-transform: uppercase;
+  }
+  h1 {
+    font-family: "Fraunces", "DejaVu Serif", serif;
+    font-weight: 700;
+    font-size: 34pt;
+    line-height: 1;
+    margin: 2mm 0 3mm;
+  }
+  .subtitle { font-size: 13pt; color: var(--muted); margin: 0; }
+  .subtitle b { color: var(--ink); }
+
+  /* Formula grid */
+  .formula {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3mm;
+    position: relative;
+  }
+  .col {
+    border-radius: 5mm;
+    padding: 4mm 3.5mm 4.5mm;
+    background: var(--sage-light);
+  }
+  .col:nth-child(2) { background: var(--mustard-light); }
+  .col:nth-child(3) { background: #E3EEF0; }
+  .col:nth-child(4) { background: var(--terracotta-light); }
+  .col h2 {
+    margin: 0 0 3mm;
+    font-family: "Fraunces", "DejaVu Serif", serif;
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+  }
+  .col h2 .emoji { display: block; font-size: 17pt; margin-bottom: 1mm; }
+  .step {
+    display: block;
+    text-align: center;
+    font-size: 8.5pt;
+    font-weight: 800;
+    letter-spacing: .12em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 1mm;
+  }
+  .col ul { list-style: none; margin: 0; padding: 0; }
+  .col li {
+    background: rgba(255,255,255,.75);
+    border-radius: 3mm;
+    padding: 1.5mm 2.5mm;
+    margin-top: 1.6mm;
+    font-size: 10.5pt;
+    font-weight: 600;
+    text-align: center;
+  }
+  .plus {
+    text-align: center;
+    font-size: 11pt;
+    color: var(--muted);
+    margin-top: -3mm;
+  }
+
+  /* Combos */
+  section h3 {
+    font-family: "Fraunces", "DejaVu Serif", serif;
+    font-size: 15pt;
+    margin: 0 0 2.5mm;
+  }
+  .combos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .combo {
+    border: 1.5px dashed var(--line);
+    border-radius: 4mm;
+    padding: 3.5mm;
+  }
+  .combo .name { font-weight: 800; font-size: 11pt; margin-bottom: 1.5mm; }
+  .combo .parts { font-size: 9.5pt; color: var(--muted); line-height: 1.45; }
+
+  /* Tips */
+  .tips { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .tip {
+    background: var(--cream);
+    border-radius: 4mm;
+    padding: 3mm 3.5mm;
+  }
+  .tip .num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 6mm; height: 6mm; border-radius: 50%;
+    background: var(--sage); color: #fff; font-weight: 800; font-size: 10pt;
+    margin-bottom: 2mm;
+  }
+  .tip .t { font-weight: 800; font-size: 11pt; margin-bottom: 1mm; }
+  .tip .d { font-size: 9.5pt; color: var(--muted); line-height: 1.45; }
+
+  /* Toaster hack */
+  .hack {
+    display: flex; gap: 4mm; align-items: center;
+    background: var(--mustard-light);
+    border-radius: 5mm;
+    padding: 4mm 5mm;
+  }
+  .hack .big { font-size: 26pt; }
+  .hack .t { font-weight: 800; font-size: 12pt; margin-bottom: .8mm; }
+  .hack .d { font-size: 10pt; line-height: 1.45; }
+
+  footer {
+    margin-top: auto;
+    background: var(--ink);
+    color: #fff;
+    border-radius: 5mm;
+    padding: 5mm 6mm;
+    display: flex; justify-content: space-between; align-items: center; gap: 5mm;
+  }
+  footer .t { font-family: "Fraunces", "DejaVu Serif", serif; font-size: 14pt; margin-bottom: 1mm; }
+  footer .d { font-size: 9.5pt; opacity: .8; }
+  footer .cta {
+    background: var(--terracotta);
+    color: #fff;
+    font-weight: 800;
+    font-size: 10pt;
+    padding: 3mm 5mm;
+    border-radius: 99px;
+    white-space: nowrap;
+  }
+  .credit { text-align: center; font-size: 8pt; color: var(--muted); margin-top: -3mm; }
+
+  @media screen and (max-width: 700px) {
+    .page { width: 100%; padding: 16px; }
+    .formula, .combos, .tips { grid-template-columns: 1fr 1fr; }
+    footer { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <span class="kicker">The no-microwave</span>
+    <h1>Lunch Box Formula</h1>
+    <p class="subtitle">Pick <b>one from each column</b>. Pack it. Eat it cold. Done.</p>
+  </header>
+
+  <div class="formula">
+    <div class="col">
+      <span class="step">Step 1</span>
+      <h2><span class="emoji">🍗</span>Protein</h2>
+      <ul>
+        <li>Chicken</li>
+        <li>Mini meatballs</li>
+        <li>Egg / Spanish tortilla</li>
+        <li>Beans / falafel</li>
+        <li>Tuna</li>
+      </ul>
+    </div>
+    <div class="col">
+      <span class="step">Step 2</span>
+      <h2><span class="emoji">🍚</span>Base</h2>
+      <ul>
+        <li>Rice</li>
+        <li>Couscous / bulgur</li>
+        <li>Pasta / orzo</li>
+        <li>Potatoes</li>
+        <li>Tortilla wrap</li>
+      </ul>
+    </div>
+    <div class="col">
+      <span class="step">Step 3</span>
+      <h2><span class="emoji">🥕</span>Veggies</h2>
+      <ul>
+        <li>Roasted bell peppers</li>
+        <li>Cucumber &amp; tomato</li>
+        <li>Broccoli</li>
+        <li>Carrots</li>
+        <li>Lettuce</li>
+      </ul>
+    </div>
+    <div class="col">
+      <span class="step">Step 4</span>
+      <h2><span class="emoji">🥣</span>Sauce</h2>
+      <ul>
+        <li>Garlic yogurt</li>
+        <li>Pesto</li>
+        <li>Peanut</li>
+        <li>Honey mustard</li>
+        <li>Tzatziki</li>
+      </ul>
+    </div>
+  </div>
+  <p class="plus">5 × 5 × 5 × 5 = over 600 lunch combinations. No reheating needed.</p>
+
+  <section>
+    <h3>Not sure where to start? Try these:</h3>
+    <div class="combos">
+      <div class="combo">
+        <div class="name">Garlic Chicken Bowl</div>
+        <div class="parts">Chicken + rice + roasted bell peppers + garlic yogurt</div>
+      </div>
+      <div class="combo">
+        <div class="name">Greek-ish Meatball Box</div>
+        <div class="parts">Mini meatballs + couscous + cucumber &amp; tomato + tzatziki</div>
+      </div>
+      <div class="combo">
+        <div class="name">Pesto Pasta Salad</div>
+        <div class="parts">Beans + pasta + broccoli + pesto</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>3 rules for a lunch that stays fresh</h3>
+    <div class="tips">
+      <div class="tip">
+        <div class="num">1</div>
+        <div class="t">Sauce on the side</div>
+        <div class="d">Pack it in a small separate container so your grains don't get soggy.</div>
+      </div>
+      <div class="tip">
+        <div class="num">2</div>
+        <div class="t">Greens on top</div>
+        <div class="d">Keep lettuce and fresh herbs away from wet ingredients. Add them last.</div>
+      </div>
+      <div class="tip">
+        <div class="num">3</div>
+        <div class="t">Keep it cool</div>
+        <div class="d">Fridge until you leave, then a fridge or ice pack at work. Prepped lunches keep 3–4 days.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hack">
+    <div class="big">🥪</div>
+    <div>
+      <div class="t">Bonus: the sandwich toaster hack</div>
+      <div class="d">Only have a sandwich toaster at work? Fill a tortilla with your protein, veggies and a little cheese, fold it and toast it. Warm, crispy quesadilla in 3 minutes.</div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <div class="t">Want a full week planned for you?</div>
+      <div class="d">Week 1: recipes, shopping list &amp; a step-by-step Sunday prep guide.</div>
+    </div>
+    <div class="cta">[your shop link]</div>
+  </footer>
+  <div class="credit">© [Your name / shop name] · For personal use only</div>
+
+</div>
+</body>
+</html>
