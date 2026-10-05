@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:transparent}svg{display:block}</style></head><body>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C77DFF"/><stop offset="1" stop-color="#8A3FD1"/></linearGradient>
+ <radialGradient id="glow" cx="50%" cy="55%" r="50%"><stop offset="0" stop-color="#C77DFF" stop-opacity=".45"/><stop offset="1" stop-color="#C77DFF" stop-opacity="0"/></radialGradient>
+ <clipPath id="flask"><path d="M432 330 L432 395 C330 430 262 520 262 630 C262 770 375 880 512 880 C649 880 762 770 762 630 C762 520 694 430 592 395 L592 330 Z"/></clipPath>
+</defs>
+<ellipse cx="512" cy="930" rx="230" ry="34" fill="#8A3FD1" opacity=".18"/>
+<circle cx="512" cy="640" r="330" fill="url(#glow)"/>
+<!-- glass body -->
+<path d="M432 330 L432 395 C330 430 262 520 262 630 C262 770 375 880 512 880 C649 880 762 770 762 630 C762 520 694 430 592 395 L592 330 Z" fill="#EFE6FA"/>
+<!-- liquid -->
+<g clip-path="url(#flask)">
+ <path d="M240 600 C330 560 400 640 512 610 C620 580 690 545 790 590 L790 900 L240 900 Z" fill="url(#liq)"/>
+ <path d="M240 600 C330 560 400 640 512 610 C620 580 690 545 790 590" fill="none" stroke="#E2B8FF" stroke-width="14" stroke-linecap="round"/>
+ <circle cx="420" cy="700" r="14" fill="#fff" opacity=".9"/><circle cx="560" cy="760" r="9" fill="#fff" opacity=".8"/>
+ <circle cx="640" cy="680" r="11" fill="#fff" opacity=".85"/><circle cx="480" cy="800" r="7" fill="#fff" opacity=".7"/>
+ <circle cx="360" cy="780" r="6" fill="#fff" opacity=".7"/><circle cx="600" cy="830" r="6" fill="#fff" opacity=".7"/>
+ <!-- glass highlights -->
+ <path d="M318 600 C320 520 360 470 410 445" fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round" opacity=".85"/>
+ <path d="M690 720 C680 770 650 805 615 825" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".6"/>
+</g>
+<!-- outline -->
+<path d="M432 330 L432 395 C330 430 262 520 262 630 C262 770 375 880 512 880 C649 880 762 770 762 630 C762 520 694 430 592 395 L592 330" fill="none" stroke="#2A2433" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+<!-- neck rim -->
+<rect x="405" y="300" width="214" height="48" rx="22" fill="#EFE6FA" stroke="#2A2433" stroke-width="18"/>
+<!-- cork -->
+<path d="M440 300 L452 205 C455 185 472 175 512 175 C552 175 569 185 572 205 L584 300 Z" fill="#B9773F" stroke="#2A2433" stroke-width="18" stroke-linejoin="round"/>
+<path d="M452 205 C470 222 554 222 572 205" fill="none" stroke="#2A2433" stroke-width="12"/>
+<circle cx="490" cy="245" r="9" fill="#7A4A22"/><circle cx="535" cy="262" r="8" fill="#7A4A22"/><circle cx="515" cy="232" r="6" fill="#7A4A22"/><circle cx="550" cy="236" r="6" fill="#7A4A22"/>
+<!-- sparkles -->
+<g fill="#F2C94C" stroke="#2A2433" stroke-width="8" stroke-linejoin="round">
+ <path d="M700 170 L716 222 L768 238 L716 254 L700 306 L684 254 L632 238 L684 222 Z"/>
+ <path d="M300 230 L310 262 L342 272 L310 282 L300 314 L290 282 L258 272 L290 262 Z"/>
+ <path d="M790 400 L798 424 L822 432 L798 440 L790 464 L782 440 L758 432 L782 424 Z"/>
+</g>
+<!-- rising bubbles -->
+<circle cx="610" cy="150" r="14" fill="none" stroke="#C77DFF" stroke-width="8"/>
+<circle cx="640" cy="95" r="9" fill="none" stroke="#C77DFF" stroke-width="7"/>
+</svg></body></html>
