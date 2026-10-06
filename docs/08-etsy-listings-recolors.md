@@ -151,7 +151,7 @@ WHAT YOU GET
 ```
 dark plum paper
 burgundy pattern
-black plum background
+black plum pattern
 moody digital paper
 gothic digital paper
 kaleidoscope paper
