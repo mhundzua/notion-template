@@ -41,23 +41,19 @@ R = [
 ]
 
 CSS = """
-@font-face{font-family:Fraunces;font-weight:700;src:url(fonts/Fraunces-700.ttf)}
-@font-face{font-family:Fraunces;font-weight:500;src:url(fonts/Fraunces-500.ttf)}
-@font-face{font-family:Nunito;font-weight:400;src:url(fonts/Nunito-400.ttf)}
-@font-face{font-family:Nunito;font-weight:600;src:url(fonts/Nunito-600.ttf)}
-@font-face{font-family:Nunito;font-weight:700;src:url(fonts/Nunito-700.ttf)}
-@font-face{font-family:Nunito;font-weight:800;src:url(fonts/Nunito-800.ttf)}
+@font-face{font-family:YoungSerif;font-weight:100 900;src:url(fonts/YoungSerif-Regular.ttf)}
+@font-face{font-family:Karla;font-weight:200 800;src:url("fonts/Karla[wght].ttf")}
 @page{size:A4;margin:0}
 *{box-sizing:border-box}
 :root{--cream:#F3E6D3;--paper:#FAF2E6;--ink:#3A2A1F;--muted:#7A6453;--sage:#9C7350;--sage-l:#EEDFCA;--terra:#B65D35;--mustard:#C9963F;--line:#E0CDB3;--dark:#2E2018}
-body{margin:0;font-family:Nunito,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;font-family:Karla,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .page{width:210mm;height:297mm;overflow:hidden;position:relative;background:var(--paper);padding:14mm 15mm 12mm;page-break-after:always;display:flex;flex-direction:column}
 .page:last-child{page-break-after:auto}
 .kick{font-weight:800;font-size:9.5pt;letter-spacing:.18em;color:var(--terra);text-transform:uppercase}
-h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
+h1,h2,h3{font-family:YoungSerif,serif;font-weight:700;margin:0}
 .cg>div:first-child{grid-row:span 2}
 .foot{position:absolute;left:15mm;right:15mm;bottom:8mm;display:flex;justify-content:space-between;font-size:8pt;color:var(--muted)}
-.foot b{font-family:Fraunces,serif;font-size:9.5pt;color:var(--ink)}
+.foot b{font-family:YoungSerif,serif;font-size:9.5pt;color:var(--ink)}
 /* recipe page */
 .rh{border-radius:6mm;padding:7mm 8mm;display:flex;gap:6mm;align-items:center;background:var(--dark);color:var(--paper)}
 .rh .tg{color:#D8C3A8 !important}.rh .num{color:#E39A68 !important}
@@ -85,7 +81,7 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 .how li:before{content:counter(s);position:absolute;left:0;top:1.5mm;width:5.2mm;height:5.2mm;border-radius:50%;background:var(--ink);color:#fff;font-size:8pt;font-weight:800;display:flex;align-items:center;justify-content:center}
 .tips{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:4mm}
 .tip{border-radius:4mm;padding:4mm 5mm;font-size:10.3pt;line-height:1.4;background:#F6EBDB;border:1.4px solid var(--line)}
-.tip b{display:block;font-family:Fraunces,serif;font-size:11pt;margin-bottom:1mm}
+.tip b{display:block;font-family:YoungSerif,serif;font-size:11pt;margin-bottom:1mm}
 .notes{margin-top:4mm;border:1.4px dashed var(--line);border-radius:4mm;padding:3mm 5mm;flex:1;min-height:12mm;margin-bottom:5mm;font-size:9pt;font-weight:800;letter-spacing:.12em;color:var(--muted)}
 """
 
@@ -126,7 +122,7 @@ cover = f'''<div class="page" style="background:var(--dark);color:var(--paper);p
 {"".join(f'<div style="display:flex;align-items:center;gap:4mm;background:rgba(250,242,230,.07);border:1px solid rgba(250,242,230,.2);border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">{r["emoji"]}</span>{r["title"]}<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:#D8C3A8">page {r["n"]+2}</span></div>' for r in R)}
 <div style="display:flex;align-items:center;gap:4mm;background:#B65D35;border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">🛒</span>Shopping lists & weekend prep<span style="margin-left:auto;font-weight:600;font-size:9.5pt;opacity:.85">page 8</span></div>
 </div></div>
-<div style="position:absolute;left:16mm;bottom:12mm;font-family:Fraunces,serif;font-size:13pt;color:#D8C3A8">MadaraMakes</div></div>'''
+<div style="position:absolute;left:16mm;bottom:12mm;font-family:YoungSerif,serif;font-size:13pt;color:#D8C3A8">MadaraMakes</div></div>'''
 howto = f'''<div class="page">
 <div class="kick">Before you start</div><h1 style="font-size:30pt;margin:2mm 0 6mm">How to use this guide</h1>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:5mm">
@@ -135,7 +131,7 @@ howto = f'''<div class="page">
 </div>
 <h3 style="font-size:15pt;margin:8mm 0 3mm">5 golden rules</h3>
 <div style="display:grid;gap:3mm">
-{"".join(f'<div style="display:flex;gap:5mm;align-items:flex-start;background:var(--cream);border-radius:4mm;padding:4mm 5mm"><div style="font-family:Fraunces,serif;font-size:22pt;color:var(--terra);line-height:1;width:8mm">{i}</div><div style="font-size:10.5pt;line-height:1.45"><b style="font-size:11.5pt">{a}</b><br>{b}</div></div>' for i,(a,b) in enumerate([
+{"".join(f'<div style="display:flex;gap:5mm;align-items:flex-start;background:var(--cream);border-radius:4mm;padding:4mm 5mm"><div style="font-family:YoungSerif,serif;font-size:22pt;color:var(--terra);line-height:1;width:8mm">{i}</div><div style="font-size:10.5pt;line-height:1.45"><b style="font-size:11.5pt">{a}</b><br>{b}</div></div>' for i,(a,b) in enumerate([
  ("Fill it halfway to three-quarters.","Too empty and food dries out, too full and it won't cook evenly."),
  ("Don't lift the lid.","Every peek lets the heat out and can add up to 20–30 minutes to the cooking time."),
  ("Dairy goes in at the end.","Cream, cheese and milk can split if they cook for hours. Stir them in during the last 15–30 minutes."),
