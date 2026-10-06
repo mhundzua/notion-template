@@ -55,6 +55,7 @@ body{margin:0;font-family:Nunito,sans-serif;color:var(--ink);-webkit-print-color
 .page:last-child{page-break-after:auto}
 .kick{font-weight:800;font-size:9.5pt;letter-spacing:.18em;color:var(--terra);text-transform:uppercase}
 h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
+.cg>div:first-child{grid-row:span 2}
 .foot{position:absolute;left:15mm;right:15mm;bottom:8mm;display:flex;justify-content:space-between;font-size:8pt;color:var(--muted)}
 .foot b{font-family:Fraunces,serif;font-size:9.5pt;color:var(--ink)}
 /* recipe page */
@@ -116,7 +117,7 @@ def cover_photos():
     return "".join(f'<div style="background:url(photos/{os.path.basename(f)}) center/cover;border-radius:3mm"></div>' for f in fs[:5])
 
 cover = f'''<div class="page" style="background:var(--dark);color:var(--paper);padding:0">
-<div style="display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:43mm 43mm;gap:2.5mm;padding:12mm 12mm 0;height:100mm" class="cg"><style>.cg div:first-child{{grid-row:span 2}}</style>{cover_photos()}</div>
+<div style="display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:43mm 43mm;gap:2.5mm;padding:12mm 12mm 0;height:100mm" class="cg">{cover_photos()}</div>
 <div style="padding:9mm 16mm 0">
 <div class="kick" style="color:#E39A68">Slow cooker & Instant Pot</div>
 <h1 style="font-size:46pt;line-height:1;margin:3mm 0 4mm;color:var(--paper)">Cozy Crockpot <span style="color:#E39A68">Dinners</span></h1>
