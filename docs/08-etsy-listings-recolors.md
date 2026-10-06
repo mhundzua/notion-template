@@ -4,11 +4,11 @@ Visas 7 jaunās krāsas ir **tas pats Ancient Echoes raksts**. Lai Etsy to neuzs
 
 | Listings | Faili | Cenas ideja |
 |---|---|---|
-| 1. **Moody Earth** komplekts | 5: Moody Plum, Olive Garden, Maroon & Walnut, Deep Plum, Deep Violet | kā Ancient Echoes (~2,90 €) |
+| 1. **Moody Earth** komplekts | 5: Moody Plum, Olive Garden, Maroon & Walnut, Deep Violet, Midnight | kā Ancient Echoes (~2,90 €) |
 | 2. **Almost Black Violet** | 1 | ~1,50 € |
 | 3. **Almost Black Plum** | 1 | ~1,50 € |
 
-⚠️ **Pirms publicēšanas:** pārdošanai vajag failus **4000 × 4000 px**. Pašreizējie recolors ir 1125 px. 4000 px ir tikai Almost Black Violet.
+✅ Moody Earth faili ir gatavi 4000 × 4000 px (`visionary-realm/moody/`), kopā ar vāka bildi un Midnight info lapām.
 
 ---
 
@@ -16,14 +16,14 @@ Visas 7 jaunās krāsas ir **tas pats Ancient Echoes raksts**. Lai Etsy to neuzs
 
 ### Title
 ```
-Moody Earth Digital Paper, Plum Olive Maroon Kaleidoscope Pattern, Witchy Vintage Background, Commercial Use Printable Paper Pack
+Moody Earth Digital Paper, Plum Olive Maroon Violet Kaleidoscope Pattern, Witchy Vintage Background, Commercial Use Paper Pack
 ```
 
 ### Description
 ```
 Ancient Echoes in a moody, earthy palette ✦
 
-My original kaleidoscope design, now in five deep, vintage colors: dusty plum, olive green, warm maroon and violet. Moody, a little mystical and perfect for witchy and dark academia projects.
+My original kaleidoscope design, now in five deep, vintage colors: dusty plum, olive green, warm maroon, deep violet and a dark midnight. Moody, a little mystical and perfect for witchy and dark academia projects.
 
 ━━━━━━━━━━━━━━━━
 WHAT YOU GET
@@ -32,8 +32,8 @@ WHAT YOU GET
    • Moody Plum: plum background, olive and cream pattern
    • Olive Garden: olive background, dusty rose pattern
    • Maroon & Walnut: maroon background, walnut and cream pattern
-   • Deep Plum
-   • Deep Violet
+   • Deep Violet: violet background, purple and teal pattern
+   • Midnight: almost-black violet background, green pattern with golden sparks
 ✦ 4000 × 4000 px, high resolution for print
 
 ━━━━━━━━━━━━━━━━
