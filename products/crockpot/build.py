@@ -112,7 +112,7 @@ cover = f'''<div class="page" style="background:var(--cream);padding:0">
 <p style="font-size:14pt;font-weight:600;color:var(--muted);max-width:120mm;margin:0 0 10mm">5 easy dump-and-go dinners for busy weeks, with 2 cozy recipes from Georgia, where my family lives.</p>
 <div style="display:grid;gap:3mm;max-width:130mm">
 {"".join(f'<div style="display:flex;align-items:center;gap:4mm;background:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">{r["emoji"]}</span>{r["title"]}<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:var(--muted)">page {r["n"]+2}</span></div>' for r in R)}
-<div style="display:flex;align-items:center;gap:4mm;background:var(--ink);color:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🛒</span>Shopping list & Sunday prep<span style="margin-left:auto;font-weight:600;font-size:9.5pt;opacity:.8">page 8</span></div>
+<div style="display:flex;align-items:center;gap:4mm;background:var(--ink);color:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🛒</span>Shopping lists & weekend prep<span style="margin-left:auto;font-weight:600;font-size:9.5pt;opacity:.8">page 8</span></div>
 </div></div>
 <div style="position:absolute;left:18mm;bottom:14mm;font-family:Fraunces,serif;font-size:13pt">MadaraMakes</div></div>'''
 
@@ -134,27 +134,27 @@ howto = f'''<div class="page">
 <div class="tip" style="margin-top:8mm"><b>Good to know</b>Cooking times are a guide and can vary depending on your appliance and the size of your pieces. Chicken is safe to eat at 74 °C (165 °F). Most dishes keep 3–4 days in the fridge or up to 3 months in the freezer (except the creamy ones).</div>
 {foot(2)}</div>'''
 
-shop = [("🥩 Meat",["Chicken breasts or thighs · 2.1 kg (4½ lb) total"]),
- ("🥕 Vegetables & herbs",["Onions · 4","Garlic · 2 heads","Carrots · 5","Potatoes · 5","Eggplants · 2","Bell peppers · 2","Tomatoes · 4","Celery · 2 stalks","Spinach · 2 big handfuls","Small chili · 1 (optional)","Fresh cilantro, basil & parsley","Lime · 1"]),
- ("🥫 Pantry",["Salsa · 1 jar (450 g / 16 oz)","Sun-dried tomatoes · ½ cup","Tomato paste · 1 small can","Chicken broth · 5 cups (1.25 l)","Dried red kidney beans · 400 g (or 3 cans)","Flour · 3 tbsp","Walnuts · ½ cup (optional)","Oil"]),
- ("🧀 Dairy & frozen",["Heavy cream · 1 cup","Milk or cream · 1 cup","Parmesan · ½ cup grated","Frozen peas · 1 cup"]),
- ("🧂 Spices",["Taco seasoning","Italian seasoning","Dried thyme","Ground coriander","Blue fenugreek (optional)","Chili flakes · bay leaves","Salt & pepper"])]
-
+shop = [("🌮 Salsa Pulled Chicken",["Chicken breasts or thighs · 900 g (2 lb)","Salsa · 1 jar (450 g / 16 oz)","Taco seasoning","Lime · 1"]),
+ ("🍝 Creamy Tuscan Chicken",["Chicken breasts · 700 g (1½ lb)","Chicken broth · 1 cup","Sun-dried tomatoes · ½ cup","Heavy cream · 1 cup","Parmesan · ½ cup grated","Spinach · 2 handfuls","Italian seasoning"]),
+ ("🥧 Chicken Pot Pie Soup",["Chicken breasts · 500 g (1 lb)","Carrots · 3 · celery · 2 stalks","Potatoes · 2","Chicken broth · 4 cups (1 l)","Milk or cream · 1 cup","Frozen peas · 1 cup","Dried thyme · flour"]),
+ ("🍆 Ajapsandali",["Eggplants · 2","Potatoes · 3 · carrots · 2","Bell peppers · 2","Tomatoes · 4 (or 1 can)","Small chili (optional)","Fresh cilantro, basil & parsley"]),
+ ("🫘 Lobio",["Dried red kidney beans · 400 g (or 3 cans)","Walnuts · ½ cup (optional)","Blue fenugreek (optional)","Fresh cilantro"]),
+ ("🧂 Pantry basics (used in several)",["Onions & garlic","Oil · salt · pepper","Tomato paste","Ground coriander · bay leaves","Chili flakes"])]
 def shop_item(x):
     return ('<div style="display:flex;gap:2.5mm;align-items:center;font-size:9.8pt;padding:1.1mm 0;border-bottom:1px dashed var(--line)">'
             '<span style="width:3mm;height:3mm;border:1.4px solid var(--sage);border-radius:1mm;flex:none"></span>' + x + '</div>')
 shop_html = "".join('<div style="break-inside:avoid;margin-bottom:4.5mm"><h3 style="font-size:12.5pt;margin-bottom:1.5mm">' + h + '</h3>'
                     + "".join(shop_item(x) for x in items) + '</div>' for h, items in shop)
 shopping = f'''<div class="page">
-<div class="kick">All 5 recipes</div><h1 style="font-size:30pt;margin:2mm 0 5mm">Shopping list</h1>
+<div class="kick">Pick 2 or 3 for this week</div><h1 style="font-size:30pt;margin:2mm 0 2mm">Shopping lists</h1><p style="font-size:10.5pt;color:var(--muted);margin:0 0 5mm">Check the pantry basics first, then add the lists for the recipes you want to cook this week.</p>
 <div style="columns:2;column-gap:7mm">
 {shop_html}
 </div>
 <div style="background:var(--ink);color:var(--cream);border-radius:5mm;padding:6mm 7mm;margin-top:auto;margin-bottom:8mm">
-<h3 style="font-size:15pt;margin-bottom:3mm">🗓️ 30-minute Sunday prep</h3>
+<h3 style="font-size:15pt;margin-bottom:3mm">🗓️ 30-minute weekend prep</h3>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:2mm 7mm;font-size:9.8pt;line-height:1.4">
-<div>1. Soak the kidney beans overnight.</div><div>2. Chop all the onions and mince the garlic.</div>
-<div>3. Slice the carrots, celery and peppers.</div><div>4. Cube the eggplant and potatoes on cooking day (they brown).</div>
+<div>1. Pick 2–3 recipes for the week.</div><div>2. Chop the onions and mince the garlic for all of them.</div>
+<div>3. Slice the carrots, celery and peppers.</div><div>4. Making lobio? Soak the beans the night before.</div>
 <div>5. Pack each recipe's veggies in its own labeled box or bag.</div><div>6. On cooking day: open, dump, switch on. Done! 🎉</div>
 </div></div>
 {foot(8)}</div>'''
