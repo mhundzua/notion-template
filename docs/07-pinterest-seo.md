@@ -53,3 +53,54 @@ Save the dates for 2027's biggest sky events: the annular solar eclipse on Febru
 
 **Board:** Moon Calendar & Lunar Magic
 **Topics:** Solar eclipse, Moon phases, Full moon, Astrology, Moon calendar
+
+---
+
+## Jaunā partija (6 pini, oktobris)
+
+### Pin: The 4-step lunch box formula (`freebie/listing/pin-4-formula.jpg`)
+**Title:** No Microwave Lunch Ideas: The 4-Step Lunch Box Formula for Work
+**Description:**
+No microwave at work? Use this simple 4-step lunch box formula: pick a protein, a base, veggies and a sauce, and you have 600+ cold work lunches without reheating. Easy meal prep for adults who pack lunch every day, from chicken rice bowls to pesto pasta salads. Save it for your next Sunday meal prep and grab the printable Lunch Box Formula. #nomicrowavelunch #lunchboxideas #mealprep #worklunch
+**Board:** No Microwave Lunch Ideas
+**Topics:** Lunch ideas for work, Meal prep, Cold lunch ideas, Lunch box ideas, Healthy lunch
+**Link:** Lunch Box Formula listing
+
+### Pin: 3 rules so your packed lunch never gets soggy (`freebie/listing/pin-5-soggy.jpg`)
+**Title:** Meal Prep Tips: 3 Rules So Your Packed Lunch Never Gets Soggy
+**Description:**
+Tired of soggy meal prep lunches? Keep the sauce on the side, add greens on top and keep your lunch cool, and your packed lunch stays fresh for 3 to 4 days. Simple meal prep tips for work lunches, school lunches and cold lunch ideas that actually taste good. Save these tips and find 600+ no-microwave lunch combos in the Lunch Box Formula. #mealpreptips #packedlunch #lunchprep #worklunchideas
+**Board:** No Microwave Lunch Ideas (vai jauns board: Meal Prep Tips)
+**Topics:** Meal prep tips, Packed lunch, Lunch prep, Food storage, Healthy eating
+
+### Pin: Full Moons 2027 (`visionary-realm/moon/listing/pin-moon-3-fullmoons.jpg`)
+**Title:** Full Moon Calendar 2027: All Full Moon Dates & Names
+**Description:**
+Save the dates for every full moon in 2027: the Wolf Moon on January 22, the Harvest Moon on September 15, the Hunter's Moon on October 15 and all the others, with their traditional full moon names. Plan your full moon rituals, intentions and moon journaling for the whole year. Get the printable 2027 moon calendar with all moon phases and eclipses. #fullmoon2027 #mooncalendar #fullmoonritual #moonphases
+**Board:** Moon Calendar & Lunar Magic
+**Topics:** Full moon, Moon calendar, Moon phases, Full moon ritual, Astrology
+**Piezīme:** datumi ir pēc ASV laika (ET), tāpat kā US Edition.
+
+### Pin: 2027 Moon Calendar, dark & light (`visionary-realm/moon/listing/pin-moon-4-versions.jpg`)
+**Title:** 2027 Moon Calendar Printable: Dark & Light Lunar Calendar PDF
+**Description:**
+A printable 2027 moon calendar in two styles: a dark witchy version for screens and a light, printer-friendly version. Every page shows the moon phases, the full moon name and the eclipses and sky events of the month, plus space for your intentions. US (Sunday start) and International (Monday start) editions included. #mooncalendar2027 #lunarcalendar #witchyplanner #printablecalendar
+**Board:** Moon Calendar & Lunar Magic
+**Topics:** Moon calendar, Printable calendar, Witchcraft, Planner printables, Moon phases
+
+### Pin: Ancient Echoes, 5 colorways (`visionary-realm/pin-ancient-echoes-1.jpg`)
+**Title:** Mystical Kaleidoscope Digital Paper: Ancient Echoes Pattern in 5 Colorways
+**Description:**
+Ancient Echoes is a mystical kaleidoscope pattern from my own artwork, in 5 deep colorways: midnight navy, golden brown, dark green and more. Use these high-resolution digital papers for fabric, sublimation, journals, scrapbooking and witchy crafts. Commercial use included, instant download on Etsy. #digitalpaper #kaleidoscopepattern #witchyaesthetic #mysticalart
+**Board:** Mystical Digital Papers
+**Topics:** Digital paper, Pattern design, Witchy aesthetic, Scrapbooking, Surface pattern
+
+### Pin: Make it magical (`visionary-realm/pin-ancient-echoes-2.jpg`)
+**Title:** Witchy Digital Paper for Crafts: Mugs, Fabric, Stickers & Journals
+**Description:**
+Make your crafts magical with a dark, witchy kaleidoscope digital paper. Print it on fabric, mugs, stickers, journals or a grimoire cover, or use it as a mystical background for your Canva designs. High-resolution files with commercial use for small makers. Find the Ancient Echoes collection in my Etsy shop. #witchycrafts #digitalpaper #sublimationdesigns #grimoire
+**Board:** Mystical Digital Papers
+**Topics:** Witchy crafts, Sublimation, Digital paper, DIY crafts, Grimoire
+
+### Kā publicēt
+Ieplāno ar **"Publish later"**: viens pins dienā vai katru otro dienu, pārmaiņus starp produktiem. Tā 6 pini aizpilda 1–2 nedēļas.
