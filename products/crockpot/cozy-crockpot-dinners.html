@@ -7,7 +7,7 @@
 @font-face{font-family:Nunito;font-weight:800;src:url(fonts/Nunito-800.ttf)}
 @page{size:A4;margin:0}
 *{box-sizing:border-box}
-:root{--cream:#FBF6EE;--paper:#FFFDF9;--ink:#2F3B2F;--muted:#5F6B5F;--sage:#7C9A7E;--sage-l:#E6EEE3;--terra:#D9774B;--mustard:#E8B04B;--line:#E7DED0}
+:root{--cream:#F3E6D3;--paper:#FAF2E6;--ink:#3A2A1F;--muted:#7A6453;--sage:#9C7350;--sage-l:#EEDFCA;--terra:#B65D35;--mustard:#C9963F;--line:#E0CDB3;--dark:#2E2018}
 body{margin:0;font-family:Nunito,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .page{width:210mm;height:297mm;overflow:hidden;position:relative;background:var(--paper);padding:14mm 15mm 12mm;page-break-after:always;display:flex;flex-direction:column}
 .page:last-child{page-break-after:auto}
@@ -16,23 +16,24 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 .foot{position:absolute;left:15mm;right:15mm;bottom:8mm;display:flex;justify-content:space-between;font-size:8pt;color:var(--muted)}
 .foot b{font-family:Fraunces,serif;font-size:9.5pt;color:var(--ink)}
 /* recipe page */
-.rh{border-radius:6mm;padding:7mm 8mm;display:flex;gap:6mm;align-items:center}
+.rh{border-radius:6mm;padding:7mm 8mm;display:flex;gap:6mm;align-items:center;background:var(--dark);color:var(--paper)}
+.rh .tg{color:#D8C3A8 !important}.rh .num{color:#E39A68 !important}
 .rh .em{font-size:44pt;line-height:1}
-.rh .ph{width:66mm;height:50mm;border-radius:4mm;background-size:cover;background-position:center;flex:none;margin:-3mm 0 -3mm -3mm}
+.rh .ph{width:62mm;height:44mm;border-radius:4mm;background-size:cover;background-position:center;flex:none;margin:-3mm 0 -3mm -3mm}
 .rh .num{font-weight:800;font-size:9pt;letter-spacing:.16em;color:var(--terra)}
 .rh h2{font-size:28pt;line-height:1.05;margin:1mm 0 1.5mm}
 .rh .tg{font-size:11pt;font-weight:600;color:var(--muted)}
-.meta{display:flex;gap:3mm;margin:5mm 0 5mm;flex-wrap:wrap}
-.chip{border:1.4px solid var(--line);border-radius:99px;padding:1.8mm 4mm;font-size:9.5pt;font-weight:700;background:#fff}
+.meta{display:flex;gap:2.5mm;margin:4mm 0 4mm;flex-wrap:wrap}
+.chip{border:1.4px solid var(--line);border-radius:99px;padding:1.8mm 4mm;font-size:9.5pt;font-weight:700;background:var(--cream)}
 .chip span{color:var(--muted);font-weight:600}
 .chip.diet{background:var(--sage);color:#fff;border-color:var(--sage)}
-.cols{display:grid;grid-template-columns:62mm 1fr;gap:7mm;flex:1}
+.cols{display:grid;grid-template-columns:62mm 1fr;gap:7mm}
 .ing{background:var(--sage-l);border-radius:5mm;padding:6mm 5.5mm}
 .ing h3,.how h3{font-size:14pt;margin-bottom:3mm}
 .ing ul{list-style:none;padding:0;margin:0}
-.ing li{font-size:10.6pt;line-height:1.35;padding:1.6mm 0 1.6mm 6mm;position:relative;border-bottom:1px dashed rgba(47,59,47,.15)}
+.ing li{font-size:10.6pt;line-height:1.35;padding:1.15mm 0 1.15mm 6mm;position:relative;border-bottom:1px dashed rgba(47,59,47,.15)}
 .ing li:last-child{border:0}
-.ing li:before{content:"";position:absolute;left:0;top:3.2mm;width:2.6mm;height:2.6mm;border:1.4px solid var(--sage);border-radius:1mm;background:#fff}
+.ing li:before{content:"";position:absolute;left:0;top:2.7mm;width:2.6mm;height:2.6mm;border:1.4px solid var(--sage);border-radius:1mm;background:var(--paper)}
 .how .m{margin-bottom:7mm}
 .how .mt{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:1.5mm;margin-bottom:2.5mm}
 .how .mt h3{margin:0;font-size:13pt}.how .mt span{font-size:9.5pt;font-weight:800;color:var(--terra)}
@@ -40,25 +41,24 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 .how li{counter-increment:s;font-size:10.8pt;line-height:1.45;padding:1.3mm 0 1.3mm 8mm;position:relative}
 .how li:before{content:counter(s);position:absolute;left:0;top:1.5mm;width:5.2mm;height:5.2mm;border-radius:50%;background:var(--ink);color:#fff;font-size:8pt;font-weight:800;display:flex;align-items:center;justify-content:center}
 .tips{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:4mm}
-.tip{border-radius:4mm;padding:4mm 5mm;font-size:10.3pt;line-height:1.4;background:var(--cream);border:1.4px solid var(--line)}
+.tip{border-radius:4mm;padding:4mm 5mm;font-size:10.3pt;line-height:1.4;background:#F6EBDB;border:1.4px solid var(--line)}
 .tip b{display:block;font-family:Fraunces,serif;font-size:11pt;margin-bottom:1mm}
-.notes{margin-top:4mm;border:1.4px dashed var(--line);border-radius:4mm;padding:3mm 5mm;height:22mm;font-size:9pt;font-weight:800;letter-spacing:.12em;color:var(--muted)}
-</style></head><body><div class="page" style="background:var(--cream);padding:0">
-<div style="position:absolute;width:150mm;height:150mm;border-radius:50%;background:#F6E4D3;right:-50mm;top:-45mm"></div>
-<div style="position:absolute;width:110mm;height:110mm;border-radius:50%;background:var(--sage-l);left:-40mm;bottom:-30mm"></div>
-<div style="position:relative;padding:30mm 18mm 0">
-<div class="kick">Slow cooker & Instant Pot</div>
-<h1 style="font-size:52pt;line-height:.98;margin:4mm 0 6mm">Cozy<br>Crockpot<br><span style="color:var(--terra)">Dinners</span></h1>
-<p style="font-size:14pt;font-weight:600;color:var(--muted);max-width:120mm;margin:0 0 10mm">5 easy dump-and-go dinners for busy weeks, with 2 cozy recipes from Georgia, where my family lives.</p>
-<div style="display:grid;gap:3mm;max-width:130mm">
-<div style="display:flex;align-items:center;gap:4mm;background:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🌮</span>Salsa Pulled Chicken<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:var(--muted)">page 3</span></div><div style="display:flex;align-items:center;gap:4mm;background:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🍝</span>Creamy Tuscan Chicken<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:var(--muted)">page 4</span></div><div style="display:flex;align-items:center;gap:4mm;background:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🥧</span>Chicken Pot Pie Soup<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:var(--muted)">page 5</span></div><div style="display:flex;align-items:center;gap:4mm;background:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🍆</span>Ajapsandali<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:var(--muted)">page 6</span></div><div style="display:flex;align-items:center;gap:4mm;background:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🫘</span>Lobio<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:var(--muted)">page 7</span></div>
-<div style="display:flex;align-items:center;gap:4mm;background:var(--ink);color:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🛒</span>Shopping lists & weekend prep<span style="margin-left:auto;font-weight:600;font-size:9.5pt;opacity:.8">page 8</span></div>
+.notes{margin-top:4mm;border:1.4px dashed var(--line);border-radius:4mm;padding:3mm 5mm;flex:1;min-height:12mm;margin-bottom:5mm;font-size:9pt;font-weight:800;letter-spacing:.12em;color:var(--muted)}
+</style></head><body><div class="page" style="background:var(--dark);color:var(--paper);padding:0">
+<div style="display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:43mm 43mm;gap:2.5mm;padding:12mm 12mm 0;height:100mm" class="cg"><style>.cg div:first-child{grid-row:span 2}</style><div style="background:url(photos/1-salsa-chicken.jpg) center/cover;border-radius:3mm"></div><div style="background:url(photos/2-tuscan.jpg) center/cover;border-radius:3mm"></div><div style="background:url(photos/3-potpie.jpg) center/cover;border-radius:3mm"></div><div style="background:url(photos/4-ajapsandali.jpg) center/cover;border-radius:3mm"></div><div style="background:url(photos/5-lobio.jpg) center/cover;border-radius:3mm"></div></div>
+<div style="padding:9mm 16mm 0">
+<div class="kick" style="color:#E39A68">Slow cooker & Instant Pot</div>
+<h1 style="font-size:46pt;line-height:1;margin:3mm 0 4mm;color:var(--paper)">Cozy Crockpot <span style="color:#E39A68">Dinners</span></h1>
+<p style="font-size:12.5pt;font-weight:600;color:#D8C3A8;max-width:150mm;margin:0 0 7mm">5 easy dump-and-go dinners for busy weeks, with 2 cozy recipes from Georgia, where my family lives.</p>
+<div style="display:grid;gap:2.5mm;max-width:150mm">
+<div style="display:flex;align-items:center;gap:4mm;background:rgba(250,242,230,.07);border:1px solid rgba(250,242,230,.2);border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">🌮</span>Salsa Pulled Chicken<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:#D8C3A8">page 3</span></div><div style="display:flex;align-items:center;gap:4mm;background:rgba(250,242,230,.07);border:1px solid rgba(250,242,230,.2);border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">🍝</span>Creamy Tuscan Chicken<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:#D8C3A8">page 4</span></div><div style="display:flex;align-items:center;gap:4mm;background:rgba(250,242,230,.07);border:1px solid rgba(250,242,230,.2);border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">🥧</span>Chicken Pot Pie Soup<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:#D8C3A8">page 5</span></div><div style="display:flex;align-items:center;gap:4mm;background:rgba(250,242,230,.07);border:1px solid rgba(250,242,230,.2);border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">🍆</span>Ajapsandali<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:#D8C3A8">page 6</span></div><div style="display:flex;align-items:center;gap:4mm;background:rgba(250,242,230,.07);border:1px solid rgba(250,242,230,.2);border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">🫘</span>Lobio<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:#D8C3A8">page 7</span></div>
+<div style="display:flex;align-items:center;gap:4mm;background:#B65D35;border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">🛒</span>Shopping lists & weekend prep<span style="margin-left:auto;font-weight:600;font-size:9.5pt;opacity:.85">page 8</span></div>
 </div></div>
-<div style="position:absolute;left:18mm;bottom:14mm;font-family:Fraunces,serif;font-size:13pt">MadaraMakes</div></div><div class="page">
+<div style="position:absolute;left:16mm;bottom:12mm;font-family:Fraunces,serif;font-size:13pt;color:#D8C3A8">MadaraMakes</div></div><div class="page">
 <div class="kick">Before you start</div><h1 style="font-size:30pt;margin:2mm 0 6mm">How to use this guide</h1>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:5mm">
 <div class="tip" style="background:var(--sage-l);border:0"><b>🐢 Slow cooker (Crockpot)</b>Low and slow. Put everything in before work and come home to dinner. LOW is gentler, HIGH is about twice as fast.</div>
-<div class="tip" style="background:#FBF0D6;border:0"><b>⚡ Instant Pot / pressure cooker</b>Fast. "Natural release" means you leave the valve closed and let the pressure drop on its own.</div>
+<div class="tip" style="background:#F1D9BC;border:0"><b>⚡ Instant Pot / pressure cooker</b>Fast. "Natural release" means you leave the valve closed and let the pressure drop on its own.</div>
 </div>
 <h3 style="font-size:15pt;margin:8mm 0 3mm">My 5 golden rules</h3>
 <div style="display:grid;gap:3mm">
@@ -66,7 +66,7 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 </div>
 <div class="tip" style="margin-top:8mm"><b>Good to know</b>Cooking times are a guide and can vary depending on your appliance and the size of your pieces. Chicken is safe to eat at 74 °C (165 °F). Most dishes keep 3–4 days in the fridge or up to 3 months in the freezer (except the creamy ones).</div>
 <div class="foot"><b>MadaraMakes</b><span>Cozy Crockpot Dinners · page 2</span><span>© 2026 MadaraMakes · personal use only</span></div></div><div class="page">
-<div class="rh" style="background:#FBE6DA"><div class="ph" style="background-image:url(photos/1-salsa-chicken.jpg)"></div><div><div class="num">RECIPE 1 OF 5</div><h2>Salsa Pulled Chicken</h2><div class="tg">3 ingredients · tacos, bowls & wraps</div></div></div>
+<div class="rh"><div class="ph" style="background-image:url(photos/1-salsa-chicken.jpg)"></div><div><div class="num">RECIPE 1 OF 5</div><h2>Salsa Pulled Chicken</h2><div class="tg">3 ingredients · tacos, bowls & wraps</div></div></div>
 <div class="meta"><div class="chip"><span>Serves</span> 6</div><div class="chip"><span>Prep</span> 5 min</div><div class="chip">🐢 <span>Slow cooker</span> LOW 6 h · HIGH 3–4 h</div><div class="chip">⚡ <span>Instant Pot</span> 12 min + 10 min release</div><div class="chip diet">Gluten-free</div></div>
 <div class="cols"><div class="ing"><h3>Ingredients</h3><ul><li>900 g (2 lb) chicken breasts or thighs</li><li>1 jar salsa (450 g / 16 oz)</li><li>1 tbsp taco seasoning</li><li>Juice of 1 lime</li><li>Salt to taste</li></ul></div>
 <div class="how"><div class="m"><div class="mt"><h3>🐢 Slow cooker</h3><span>LOW 6 h · HIGH 3–4 h</span></div><ol><li>Put the chicken in the pot and sprinkle with taco seasoning.</li><li>Pour the salsa over the top.</li><li>Cook until the chicken shreds easily.</li><li>Shred with two forks, stir in the lime juice and taste for salt.</li></ol></div>
@@ -74,7 +74,7 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 <div class="tips"><div class="tip"><b>Serve it with</b>Warm tortillas, rice bowls with corn and avocado, or nachos with melted cheese.</div><div class="tip"><b>Leftovers</b>Keeps 4 days in the fridge. Roll it into a wrap with rice and cheese for tomorrow's lunch.</div></div>
 <div class="notes">MY NOTES</div>
 <div class="foot"><b>MadaraMakes</b><span>Cozy Crockpot Dinners · page 3</span><span>© 2026 MadaraMakes · personal use only</span></div></div><div class="page">
-<div class="rh" style="background:#FBF0D6"><div class="em">🍝</div><div><div class="num">RECIPE 2 OF 5</div><h2>Creamy Tuscan Chicken</h2><div class="tg">sun-dried tomatoes · spinach · parmesan</div></div></div>
+<div class="rh"><div class="ph" style="background-image:url(photos/2-tuscan.jpg)"></div><div><div class="num">RECIPE 2 OF 5</div><h2>Creamy Tuscan Chicken</h2><div class="tg">sun-dried tomatoes · spinach · parmesan</div></div></div>
 <div class="meta"><div class="chip"><span>Serves</span> 4</div><div class="chip"><span>Prep</span> 10 min</div><div class="chip">🐢 <span>Slow cooker</span> LOW 4–5 h · HIGH 2–3 h</div><div class="chip">⚡ <span>Instant Pot</span> 10 min + 5 min release</div><div class="chip diet">Gluten-free</div></div>
 <div class="cols"><div class="ing"><h3>Ingredients</h3><ul><li>700 g (1½ lb) chicken breasts</li><li>1 cup (240 ml) chicken broth</li><li>4 garlic cloves, minced</li><li>½ cup sun-dried tomatoes, chopped</li><li>1 tsp Italian seasoning · salt & pepper</li><li><i>To finish:</i> 1 cup (240 ml) heavy cream</li><li>½ cup grated parmesan</li><li>2 big handfuls of spinach</li></ul></div>
 <div class="how"><div class="m"><div class="mt"><h3>🐢 Slow cooker</h3><span>LOW 4–5 h · HIGH 2–3 h</span></div><ol><li>Season the chicken and place it in the pot.</li><li>Add the broth, garlic, sun-dried tomatoes and Italian seasoning.</li><li>Cook until tender. Chicken breasts dry out, so don't cook longer!</li><li>Stir in the cream, parmesan and spinach. Cover for 15 min until the spinach wilts.</li></ol></div>
@@ -82,7 +82,7 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 <div class="tips"><div class="tip"><b>Serve it with</b>Pasta, rice or mashed potatoes, and crusty bread for the sauce.</div><div class="tip"><b>Leftovers</b>Keeps 3 days in the fridge. Slice the chicken and toss it with pasta and the sauce.</div></div>
 <div class="notes">MY NOTES</div>
 <div class="foot"><b>MadaraMakes</b><span>Cozy Crockpot Dinners · page 4</span><span>© 2026 MadaraMakes · personal use only</span></div></div><div class="page">
-<div class="rh" style="background:#E6EEE3"><div class="em">🥧</div><div><div class="num">RECIPE 3 OF 5</div><h2>Chicken Pot Pie Soup</h2><div class="tg">all the comfort, none of the pastry work</div></div></div>
+<div class="rh"><div class="ph" style="background-image:url(photos/3-potpie.jpg)"></div><div><div class="num">RECIPE 3 OF 5</div><h2>Chicken Pot Pie Soup</h2><div class="tg">all the comfort, none of the pastry work</div></div></div>
 <div class="meta"><div class="chip"><span>Serves</span> 6</div><div class="chip"><span>Prep</span> 15 min</div><div class="chip">🐢 <span>Slow cooker</span> LOW 6–7 h · HIGH 3–4 h</div><div class="chip">⚡ <span>Instant Pot</span> 10 min + 10 min release</div></div>
 <div class="cols"><div class="ing"><h3>Ingredients</h3><ul><li>500 g (1 lb) chicken breasts</li><li>1 onion, chopped</li><li>3 carrots, sliced</li><li>2 celery stalks, sliced</li><li>2 potatoes, cubed</li><li>2 garlic cloves, minced</li><li>4 cups (1 l) chicken broth</li><li>1 tsp dried thyme · salt & pepper</li><li><i>To finish:</i> 1 cup (240 ml) milk or cream</li><li>3 tbsp flour</li><li>1 cup frozen peas</li></ul></div>
 <div class="how"><div class="m"><div class="mt"><h3>🐢 Slow cooker</h3><span>LOW 6–7 h · HIGH 3–4 h</span></div><ol><li>Put the chicken, vegetables, garlic, broth and thyme in the pot.</li><li>Cook until the vegetables are soft.</li><li>Take out the chicken, shred it and put it back.</li><li>Whisk the flour into the milk, stir it in with the peas. Cook 20–30 min more on HIGH until thick.</li></ol></div>
@@ -90,7 +90,7 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 <div class="tips"><div class="tip"><b>Serve it with</b>Puff pastry squares baked until golden, biscuits or a slice of bread.</div><div class="tip"><b>Leftovers</b>Keeps 4 days in the fridge. It thickens overnight, so add a splash of broth when reheating.</div></div>
 <div class="notes">MY NOTES</div>
 <div class="foot"><b>MadaraMakes</b><span>Cozy Crockpot Dinners · page 5</span><span>© 2026 MadaraMakes · personal use only</span></div></div><div class="page">
-<div class="rh" style="background:#F1E6EE"><div class="em">🍆</div><div><div class="num">RECIPE 4 OF 5</div><h2>Ajapsandali</h2><div class="tg">Georgian vegetable stew</div></div></div>
+<div class="rh"><div class="ph" style="background-image:url(photos/4-ajapsandali.jpg)"></div><div><div class="num">RECIPE 4 OF 5</div><h2>Ajapsandali</h2><div class="tg">Georgian vegetable stew</div></div></div>
 <div class="meta"><div class="chip"><span>Serves</span> 4–6</div><div class="chip"><span>Prep</span> 20 min</div><div class="chip">🐢 <span>Slow cooker</span> LOW 6–7 h · HIGH 3–4 h</div><div class="chip">⚡ <span>Instant Pot</span> 6 min + 10 min release</div><div class="chip diet">Vegan</div></div>
 <div class="cols"><div class="ing"><h3>Ingredients</h3><ul><li>2 eggplants, cubed</li><li>3 potatoes, cubed</li><li>2 carrots, sliced</li><li>2 bell peppers (red + green), chopped</li><li>2 onions, chopped</li><li>4 tomatoes, chopped (or 1 can, 400 g)</li><li>2 tbsp tomato paste</li><li>5 garlic cloves, minced</li><li>1 small chili (optional)</li><li>1 tsp ground coriander · 2 bay leaves · salt</li><li>4 tbsp oil</li><li><i>To finish:</i> fresh cilantro, basil & parsley</li></ul></div>
 <div class="how"><div class="m"><div class="mt"><h3>🐢 Slow cooker</h3><span>LOW 6–7 h · HIGH 3–4 h</span></div><ol><li>Fry the eggplant, onions and peppers in the oil for 5–7 min until golden. This gives the stew its flavor.</li><li>Put them in the pot with the potatoes, carrots, spices and chili.</li><li>Add the tomatoes and tomato paste on top.</li><li>Cook until everything is soft. Stir in the garlic and herbs before serving.</li></ol></div>
@@ -98,7 +98,7 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 <div class="tips"><div class="tip"><b>Serve it with</b>Fresh bread and a piece of salty cheese. In Georgia it's often eaten warm or at room temperature.</div><div class="tip"><b>Leftovers</b>Tastes even better the next day! Keeps 4 days in the fridge.</div></div>
 <div class="notes">MY NOTES</div>
 <div class="foot"><b>MadaraMakes</b><span>Cozy Crockpot Dinners · page 6</span><span>© 2026 MadaraMakes · personal use only</span></div></div><div class="page">
-<div class="rh" style="background:#F6E4D3"><div class="em">🫘</div><div><div class="num">RECIPE 5 OF 5</div><h2>Lobio</h2><div class="tg">Georgian bean stew</div></div></div>
+<div class="rh"><div class="ph" style="background-image:url(photos/5-lobio.jpg)"></div><div><div class="num">RECIPE 5 OF 5</div><h2>Lobio</h2><div class="tg">Georgian bean stew</div></div></div>
 <div class="meta"><div class="chip"><span>Serves</span> 4–6</div><div class="chip"><span>Prep</span> 10 min</div><div class="chip">🐢 <span>Slow cooker</span> LOW 6–8 h · HIGH 4 h</div><div class="chip">⚡ <span>Instant Pot</span> 30 min + 15 min release</div><div class="chip diet">Vegan</div></div>
 <div class="cols"><div class="ing"><h3>Ingredients</h3><ul><li>400 g (2 cups) dried red kidney beans, soaked overnight</li><li>1 onion, finely chopped</li><li>4 garlic cloves, minced</li><li>1 tbsp tomato paste</li><li>1 tsp ground coriander</li><li>½ tsp blue fenugreek (utskho suneli), optional</li><li>½ tsp chili flakes · 1 bay leaf · salt</li><li>1 tbsp oil</li><li><i>To finish:</i> ½ cup crushed walnuts (optional), fresh cilantro</li></ul></div>
 <div class="how"><div class="m"><div class="mt"><h3>🐢 Slow cooker</h3><span>LOW 6–8 h · HIGH 4 h</span></div><ol><li><b>Important:</b> boil the soaked beans hard in a regular pot for 10 min first. Red kidney beans aren't safe if cooked only at low heat.</li><li>Drain and put them in the slow cooker with the onion, spices, tomato paste and oil.</li><li>Cover with water by 3 cm (1 inch) and cook until very soft.</li><li>Mash about a third of the beans. Stir in the garlic, walnuts and cilantro. Season with salt.</li></ol></div>

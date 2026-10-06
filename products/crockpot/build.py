@@ -49,7 +49,7 @@ CSS = """
 @font-face{font-family:Nunito;font-weight:800;src:url(fonts/Nunito-800.ttf)}
 @page{size:A4;margin:0}
 *{box-sizing:border-box}
-:root{--cream:#FBF6EE;--paper:#FFFDF9;--ink:#2F3B2F;--muted:#5F6B5F;--sage:#7C9A7E;--sage-l:#E6EEE3;--terra:#D9774B;--mustard:#E8B04B;--line:#E7DED0}
+:root{--cream:#F3E6D3;--paper:#FAF2E6;--ink:#3A2A1F;--muted:#7A6453;--sage:#9C7350;--sage-l:#EEDFCA;--terra:#B65D35;--mustard:#C9963F;--line:#E0CDB3;--dark:#2E2018}
 body{margin:0;font-family:Nunito,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .page{width:210mm;height:297mm;overflow:hidden;position:relative;background:var(--paper);padding:14mm 15mm 12mm;page-break-after:always;display:flex;flex-direction:column}
 .page:last-child{page-break-after:auto}
@@ -58,23 +58,24 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 .foot{position:absolute;left:15mm;right:15mm;bottom:8mm;display:flex;justify-content:space-between;font-size:8pt;color:var(--muted)}
 .foot b{font-family:Fraunces,serif;font-size:9.5pt;color:var(--ink)}
 /* recipe page */
-.rh{border-radius:6mm;padding:7mm 8mm;display:flex;gap:6mm;align-items:center}
+.rh{border-radius:6mm;padding:7mm 8mm;display:flex;gap:6mm;align-items:center;background:var(--dark);color:var(--paper)}
+.rh .tg{color:#D8C3A8 !important}.rh .num{color:#E39A68 !important}
 .rh .em{font-size:44pt;line-height:1}
-.rh .ph{width:66mm;height:50mm;border-radius:4mm;background-size:cover;background-position:center;flex:none;margin:-3mm 0 -3mm -3mm}
+.rh .ph{width:62mm;height:44mm;border-radius:4mm;background-size:cover;background-position:center;flex:none;margin:-3mm 0 -3mm -3mm}
 .rh .num{font-weight:800;font-size:9pt;letter-spacing:.16em;color:var(--terra)}
 .rh h2{font-size:28pt;line-height:1.05;margin:1mm 0 1.5mm}
 .rh .tg{font-size:11pt;font-weight:600;color:var(--muted)}
-.meta{display:flex;gap:3mm;margin:5mm 0 5mm;flex-wrap:wrap}
-.chip{border:1.4px solid var(--line);border-radius:99px;padding:1.8mm 4mm;font-size:9.5pt;font-weight:700;background:#fff}
+.meta{display:flex;gap:2.5mm;margin:4mm 0 4mm;flex-wrap:wrap}
+.chip{border:1.4px solid var(--line);border-radius:99px;padding:1.8mm 4mm;font-size:9.5pt;font-weight:700;background:var(--cream)}
 .chip span{color:var(--muted);font-weight:600}
 .chip.diet{background:var(--sage);color:#fff;border-color:var(--sage)}
-.cols{display:grid;grid-template-columns:62mm 1fr;gap:7mm;flex:1}
+.cols{display:grid;grid-template-columns:62mm 1fr;gap:7mm}
 .ing{background:var(--sage-l);border-radius:5mm;padding:6mm 5.5mm}
 .ing h3,.how h3{font-size:14pt;margin-bottom:3mm}
 .ing ul{list-style:none;padding:0;margin:0}
-.ing li{font-size:10.6pt;line-height:1.35;padding:1.6mm 0 1.6mm 6mm;position:relative;border-bottom:1px dashed rgba(47,59,47,.15)}
+.ing li{font-size:10.6pt;line-height:1.35;padding:1.15mm 0 1.15mm 6mm;position:relative;border-bottom:1px dashed rgba(47,59,47,.15)}
 .ing li:last-child{border:0}
-.ing li:before{content:"";position:absolute;left:0;top:3.2mm;width:2.6mm;height:2.6mm;border:1.4px solid var(--sage);border-radius:1mm;background:#fff}
+.ing li:before{content:"";position:absolute;left:0;top:2.7mm;width:2.6mm;height:2.6mm;border:1.4px solid var(--sage);border-radius:1mm;background:var(--paper)}
 .how .m{margin-bottom:7mm}
 .how .mt{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:1.5mm;margin-bottom:2.5mm}
 .how .mt h3{margin:0;font-size:13pt}.how .mt span{font-size:9.5pt;font-weight:800;color:var(--terra)}
@@ -82,9 +83,9 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 .how li{counter-increment:s;font-size:10.8pt;line-height:1.45;padding:1.3mm 0 1.3mm 8mm;position:relative}
 .how li:before{content:counter(s);position:absolute;left:0;top:1.5mm;width:5.2mm;height:5.2mm;border-radius:50%;background:var(--ink);color:#fff;font-size:8pt;font-weight:800;display:flex;align-items:center;justify-content:center}
 .tips{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:4mm}
-.tip{border-radius:4mm;padding:4mm 5mm;font-size:10.3pt;line-height:1.4;background:var(--cream);border:1.4px solid var(--line)}
+.tip{border-radius:4mm;padding:4mm 5mm;font-size:10.3pt;line-height:1.4;background:#F6EBDB;border:1.4px solid var(--line)}
 .tip b{display:block;font-family:Fraunces,serif;font-size:11pt;margin-bottom:1mm}
-.notes{margin-top:4mm;border:1.4px dashed var(--line);border-radius:4mm;padding:3mm 5mm;height:22mm;font-size:9pt;font-weight:800;letter-spacing:.12em;color:var(--muted)}
+.notes{margin-top:4mm;border:1.4px dashed var(--line);border-radius:4mm;padding:3mm 5mm;flex:1;min-height:12mm;margin-bottom:5mm;font-size:9pt;font-weight:800;letter-spacing:.12em;color:var(--muted)}
 """
 
 def foot(p): return f'<div class="foot"><b>MadaraMakes</b><span>Cozy Crockpot Dinners · page {p}</span><span>© 2026 MadaraMakes · personal use only</span></div>'
@@ -101,7 +102,7 @@ def recipe(r, p):
     i = "".join(f"<li>{x}</li>" for x in r["ip_steps"])
     diet = f'<div class="chip diet">{r["diet"]}</div>' if r["diet"] else ""
     return f'''<div class="page">
-<div class="rh" style="background:{r["color"]}">{photo(r)}<div><div class="num">RECIPE {r["n"]} OF 5</div><h2>{r["title"]}</h2><div class="tg">{r["tag"]}</div></div></div>
+<div class="rh">{photo(r)}<div><div class="num">RECIPE {r["n"]} OF 5</div><h2>{r["title"]}</h2><div class="tg">{r["tag"]}</div></div></div>
 <div class="meta"><div class="chip"><span>Serves</span> {r["serves"]}</div><div class="chip"><span>Prep</span> {r["prep"]}</div><div class="chip">🐢 <span>Slow cooker</span> {r["slow"]}</div><div class="chip">⚡ <span>Instant Pot</span> {r["ip"]}</div>{diet}</div>
 <div class="cols"><div class="ing"><h3>Ingredients</h3><ul>{li}</ul></div>
 <div class="how"><div class="m"><div class="mt"><h3>🐢 Slow cooker</h3><span>{r["slow"]}</span></div><ol>{s}</ol></div>
@@ -110,24 +111,26 @@ def recipe(r, p):
 <div class="notes">MY NOTES</div>
 {foot(p)}</div>'''
 
-cover = f'''<div class="page" style="background:var(--cream);padding:0">
-<div style="position:absolute;width:150mm;height:150mm;border-radius:50%;background:#F6E4D3;right:-50mm;top:-45mm"></div>
-<div style="position:absolute;width:110mm;height:110mm;border-radius:50%;background:var(--sage-l);left:-40mm;bottom:-30mm"></div>
-<div style="position:relative;padding:30mm 18mm 0">
-<div class="kick">Slow cooker & Instant Pot</div>
-<h1 style="font-size:52pt;line-height:.98;margin:4mm 0 6mm">Cozy<br>Crockpot<br><span style="color:var(--terra)">Dinners</span></h1>
-<p style="font-size:14pt;font-weight:600;color:var(--muted);max-width:120mm;margin:0 0 10mm">5 easy dump-and-go dinners for busy weeks, with 2 cozy recipes from Georgia, where my family lives.</p>
-<div style="display:grid;gap:3mm;max-width:130mm">
-{"".join(f'<div style="display:flex;align-items:center;gap:4mm;background:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">{r["emoji"]}</span>{r["title"]}<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:var(--muted)">page {r["n"]+2}</span></div>' for r in R)}
-<div style="display:flex;align-items:center;gap:4mm;background:var(--ink);color:#fff;border-radius:4mm;padding:3.2mm 5mm;font-weight:800;font-size:12pt"><span style="font-size:18pt">🛒</span>Shopping lists & weekend prep<span style="margin-left:auto;font-weight:600;font-size:9.5pt;opacity:.8">page 8</span></div>
-</div></div>
-<div style="position:absolute;left:18mm;bottom:14mm;font-family:Fraunces,serif;font-size:13pt">MadaraMakes</div></div>'''
+def cover_photos():
+    fs = sorted(glob.glob(os.path.join(HERE, "photos", "*.jpg")))
+    return "".join(f'<div style="background:url(photos/{os.path.basename(f)}) center/cover;border-radius:3mm"></div>' for f in fs[:5])
 
+cover = f'''<div class="page" style="background:var(--dark);color:var(--paper);padding:0">
+<div style="display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:43mm 43mm;gap:2.5mm;padding:12mm 12mm 0;height:100mm" class="cg"><style>.cg div:first-child{{grid-row:span 2}}</style>{cover_photos()}</div>
+<div style="padding:9mm 16mm 0">
+<div class="kick" style="color:#E39A68">Slow cooker & Instant Pot</div>
+<h1 style="font-size:46pt;line-height:1;margin:3mm 0 4mm;color:var(--paper)">Cozy Crockpot <span style="color:#E39A68">Dinners</span></h1>
+<p style="font-size:12.5pt;font-weight:600;color:#D8C3A8;max-width:150mm;margin:0 0 7mm">5 easy dump-and-go dinners for busy weeks, with 2 cozy recipes from Georgia, where my family lives.</p>
+<div style="display:grid;gap:2.5mm;max-width:150mm">
+{"".join(f'<div style="display:flex;align-items:center;gap:4mm;background:rgba(250,242,230,.07);border:1px solid rgba(250,242,230,.2);border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">{r["emoji"]}</span>{r["title"]}<span style="margin-left:auto;font-weight:600;font-size:9.5pt;color:#D8C3A8">page {r["n"]+2}</span></div>' for r in R)}
+<div style="display:flex;align-items:center;gap:4mm;background:#B65D35;border-radius:4mm;padding:2.8mm 5mm;font-weight:800;font-size:11.5pt"><span style="font-size:16pt">🛒</span>Shopping lists & weekend prep<span style="margin-left:auto;font-weight:600;font-size:9.5pt;opacity:.85">page 8</span></div>
+</div></div>
+<div style="position:absolute;left:16mm;bottom:12mm;font-family:Fraunces,serif;font-size:13pt;color:#D8C3A8">MadaraMakes</div></div>'''
 howto = f'''<div class="page">
 <div class="kick">Before you start</div><h1 style="font-size:30pt;margin:2mm 0 6mm">How to use this guide</h1>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:5mm">
 <div class="tip" style="background:var(--sage-l);border:0"><b>🐢 Slow cooker (Crockpot)</b>Low and slow. Put everything in before work and come home to dinner. LOW is gentler, HIGH is about twice as fast.</div>
-<div class="tip" style="background:#FBF0D6;border:0"><b>⚡ Instant Pot / pressure cooker</b>Fast. "Natural release" means you leave the valve closed and let the pressure drop on its own.</div>
+<div class="tip" style="background:#F1D9BC;border:0"><b>⚡ Instant Pot / pressure cooker</b>Fast. "Natural release" means you leave the valve closed and let the pressure drop on its own.</div>
 </div>
 <h3 style="font-size:15pt;margin:8mm 0 3mm">My 5 golden rules</h3>
 <div style="display:grid;gap:3mm">
