@@ -132,11 +132,11 @@ howto = f'''<div class="page">
 <div class="tip" style="background:var(--sage-l);border:0"><b>🐢 Slow cooker (Crockpot)</b>Low and slow. Put everything in before work and come home to dinner. LOW is gentler, HIGH is about twice as fast.</div>
 <div class="tip" style="background:#F1D9BC;border:0"><b>⚡ Instant Pot / pressure cooker</b>Fast. "Natural release" means you leave the valve closed and let the pressure drop on its own.</div>
 </div>
-<h3 style="font-size:15pt;margin:8mm 0 3mm">My 5 golden rules</h3>
+<h3 style="font-size:15pt;margin:8mm 0 3mm">5 golden rules</h3>
 <div style="display:grid;gap:3mm">
 {"".join(f'<div style="display:flex;gap:5mm;align-items:flex-start;background:var(--cream);border-radius:4mm;padding:4mm 5mm"><div style="font-family:Fraunces,serif;font-size:22pt;color:var(--terra);line-height:1;width:8mm">{i}</div><div style="font-size:10.5pt;line-height:1.45"><b style="font-size:11.5pt">{a}</b><br>{b}</div></div>' for i,(a,b) in enumerate([
- ("Fill it halfway to two-thirds.","Too empty and food dries out, too full and it won't cook evenly."),
- ("Don't lift the lid.","Every peek in a slow cooker adds about 15–20 minutes to the cooking time."),
+ ("Fill it halfway to three-quarters.","Too empty and food dries out, too full and it won't cook evenly."),
+ ("Don't lift the lid.","Every peek lets the heat out and can add up to 20–30 minutes to the cooking time."),
  ("Dairy goes in at the end.","Cream, cheese and milk can split if they cook for hours. Stir them in during the last 15–30 minutes."),
  ("Tomatoes on top in the Instant Pot.","Thick sauces on the bottom can trigger the burn warning. Layer them on top and don't stir before cooking."),
  ("Herbs and garlic last.","Fresh herbs and a little raw garlic at the end make every stew taste brighter."),],1))}
