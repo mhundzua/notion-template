@@ -60,6 +60,7 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 /* recipe page */
 .rh{border-radius:6mm;padding:7mm 8mm;display:flex;gap:6mm;align-items:center}
 .rh .em{font-size:44pt;line-height:1}
+.rh .ph{width:66mm;height:50mm;border-radius:4mm;background-size:cover;background-position:center;flex:none;margin:-3mm 0 -3mm -3mm}
 .rh .num{font-weight:800;font-size:9pt;letter-spacing:.16em;color:var(--terra)}
 .rh h2{font-size:28pt;line-height:1.05;margin:1mm 0 1.5mm}
 .rh .tg{font-size:11pt;font-weight:600;color:var(--muted)}
@@ -88,13 +89,19 @@ h1,h2,h3{font-family:Fraunces,serif;font-weight:700;margin:0}
 
 def foot(p): return f'<div class="foot"><b>MadaraMakes</b><span>Cozy Crockpot Dinners · page {p}</span><span>© 2026 MadaraMakes · personal use only</span></div>'
 
+def photo(r):
+    f = glob.glob(os.path.join(HERE, "photos", f"{r['n']}-*.jpg"))
+    if f:
+        return f'<div class="ph" style="background-image:url(photos/{os.path.basename(f[0])})"></div>'
+    return f'<div class="em">{r["emoji"]}</div>'
+
 def recipe(r, p):
     li = "".join(f"<li>{x}</li>" for x in r["ing"])
     s = "".join(f"<li>{x}</li>" for x in r["slow_steps"])
     i = "".join(f"<li>{x}</li>" for x in r["ip_steps"])
     diet = f'<div class="chip diet">{r["diet"]}</div>' if r["diet"] else ""
     return f'''<div class="page">
-<div class="rh" style="background:{r["color"]}"><div class="em">{r["emoji"]}</div><div><div class="num">RECIPE {r["n"]} OF 5</div><h2>{r["title"]}</h2><div class="tg">{r["tag"]}</div></div></div>
+<div class="rh" style="background:{r["color"]}">{photo(r)}<div><div class="num">RECIPE {r["n"]} OF 5</div><h2>{r["title"]}</h2><div class="tg">{r["tag"]}</div></div></div>
 <div class="meta"><div class="chip"><span>Serves</span> {r["serves"]}</div><div class="chip"><span>Prep</span> {r["prep"]}</div><div class="chip">🐢 <span>Slow cooker</span> {r["slow"]}</div><div class="chip">⚡ <span>Instant Pot</span> {r["ip"]}</div>{diet}</div>
 <div class="cols"><div class="ing"><h3>Ingredients</h3><ul>{li}</ul></div>
 <div class="how"><div class="m"><div class="mt"><h3>🐢 Slow cooker</h3><span>{r["slow"]}</span></div><ol>{s}</ol></div>
