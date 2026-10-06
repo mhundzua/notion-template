@@ -1,0 +1,10 @@
+@font-face{font-family:YoungSerif;src:url(../fonts/YoungSerif-Regular.ttf)}
+@font-face{font-family:Karla;font-weight:200 800;src:url("../fonts/Karla[wght].ttf")}
+*{box-sizing:border-box}
+html,body{margin:0;width:2000px;height:1500px;overflow:hidden}
+body{font-family:Karla,sans-serif;background:#2E2018;color:#FAF2E6;position:relative}
+h1{font-family:YoungSerif;font-weight:400;margin:0;line-height:1.02}
+.k{font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#E39A68;font-size:30px}
+.pg{position:absolute;border-radius:8px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 8px 20px rgba(0,0,0,.35)}
+.brand{position:absolute;font-family:YoungSerif;font-size:34px;color:#D8C3A8}
+.pill{display:inline-block;background:#B65D35;color:#FAF2E6;font-weight:800;font-size:30px;padding:18px 34px;border-radius:99px}
