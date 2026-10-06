@@ -23,7 +23,7 @@ THE 5 RECIPES
 The last two are cozy classics from Georgia, the country where my family lives.
 
 ━━━━━━━━━━━━━━━━
-WHAT'S INSIDE (8 PAGES)
+WHAT'S INSIDE (9 PAGES)
 ━━━━━━━━━━━━━━━━
 ✓ Cover with a recipe index
 ✓ How to use this guide + 5 golden rules for slow cooking
@@ -34,6 +34,7 @@ WHAT'S INSIDE (8 PAGES)
    • Space for your own notes
 ✓ A separate shopping list for each recipe
 ✓ A 30-minute weekend prep plan
+✓ BONUS: weekly dinner planner page
 
 ━━━━━━━━━━━━━━━━
 PERFECT FOR
@@ -51,7 +52,7 @@ Please use a web browser (not the Etsy app). After purchase, go to You → Purch
 ━━━━━━━━━━━━━━━━
 DETAILS
 ━━━━━━━━━━━━━━━━
-• 1 PDF file, 8 pages, A4 (prints fine on US Letter with "fit to page")
+• 2 PDF files, 9 pages each: A4 and US Letter (8.5 × 11 in)
 • Instant digital download, no physical item will be shipped
 • Food photos are AI-generated illustrations
 • Cooking times are a guide and can vary depending on your appliance
@@ -88,7 +89,7 @@ recipe book pdf
 - **Price idea:** 3,50–4,50 € (5 recipes + shopping lists, more than a 1-page printable)
 - **Section:** new section "Recipes & Meal Prep" (together with the Lunch Box Formula)
 - **Images:** `products/crockpot/listing/l1-main.jpg`, `l2-inside.jpg`, `l3-how.jpg`, `l4-shop.jpg`
-- **File to upload:** `products/crockpot/cozy-crockpot-dinners.pdf`
+- **Files to upload:** `products/crockpot/cozy-crockpot-dinners.pdf` (A4) + `products/crockpot/cozy-crockpot-dinners-US-letter.pdf`
 
 ## Pinterest pin (`products/crockpot/listing/pin-1.jpg`)
 **Title:** 5 Cozy Crockpot Dinners: Easy Slow Cooker & Instant Pot Recipes
