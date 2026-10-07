@@ -20,7 +20,7 @@ WHAT YOU GET
 ━━━━━━━━━━━━━━━━
 ✦ 5 seamless JPG patterns:
    • Sunlit Cross: cobalt, turquoise and sunny yellow tile
-   • Azure Star: blue and yellow star tile with violet details
+   • Peach Azure: warm peach and cobalt Mediterranean tile
    • Violet Hearts: violet, lilac and lemon floral tile with hidden hearts
    • Golden Sky: golden ornaments on a soft sky blue
    • Midnight Geo: mint geometric lines on deep midnight teal
